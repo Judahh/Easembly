@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ol{
+    margin-top: 1%;
+}
+ol li{
+    display: block;
+    padding-left: 0.1%;
+    margin-bottom: 0.7%;
+}
+
+.InputCheckboxClass{
+    width: 10%;
+}
+
+ol li label{
+    position: relative;
+    display: block;
+    width: 40%;
+    text-align: left;
+}
+
+.InputRadioClass{
+    width: 1%;
+}
+
+.LabelClassGender{
+    width: 1%;
+}
+
+input{
+    width: 55%;
+    padding: 2%;
+    color: #333;
+    text-transform: uppercase;
+
+}
+
+select{
+    padding: .5%;
+}
+
+ul li{
+    display: block;
+}

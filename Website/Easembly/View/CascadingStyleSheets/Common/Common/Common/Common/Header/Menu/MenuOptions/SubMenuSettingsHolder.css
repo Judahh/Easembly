@@ -1,0 +1,17 @@
+#DivIdSubMenuSettingsHolder{
+    position: absolute;
+    float: left;
+    padding: 5px 0 0 0;
+    right: 18px;
+    height: 155px;
+    width: 125%;
+}
+
+#DivIdSubMenuSettingsHolder2{
+    position: absolute;
+    float: left;
+    padding: 15px 0 0 0;
+    right: 8px;
+    height: 155px;
+    width: 125%;
+}

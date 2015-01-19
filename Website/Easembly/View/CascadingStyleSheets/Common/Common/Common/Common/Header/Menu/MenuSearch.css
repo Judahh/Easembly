@@ -1,0 +1,124 @@
+#DivIdMenuSearch{
+    visibility: visible;
+    display: inline;
+    position: absolute;
+    width: 45px;
+    height: 100%;
+    float: left;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#InputIdSearch{
+    display: inline;
+
+    width: 100%;
+    height: 100%;
+    top: 0px;
+
+    background: transparent;
+
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: white;
+
+    color:white;
+
+    font-size: 25px;
+
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: "FontFuturisticI";
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdMenuSearch:hover{
+    width: 160px;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdSearchInput{
+    display: inline;
+    opacity:0;
+
+    height: 100%;
+
+    width: 90px;
+
+    background: red;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdMenuSearch:hover #DivIdSearchInput{
+    width: 90px;
+    opacity:1;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdSearchInput:hover{
+    width: 90px;
+    opacity:1;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdMenuSearch ul ul{
+    opacity:0;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top:-200px;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdMenuSearch ul li:hover ul{
+    opacity:1;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top:40px;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}

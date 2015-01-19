@@ -1,0 +1,105 @@
+main{
+    float: left;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+}
+
+#DivIdBodyHolder{
+    /*background: #DDDDDD;
+    opacity: 0.7;*/
+    z-index: -1;
+    float: left;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: fixed;
+    /*background: dodgerblue;*/
+}
+
+#DivIdTable{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#DivIdTableRowHolder{
+    z-index: -1;
+    float: left;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+}
+
+#DivIdTableRow{
+    height: 200px;
+    width: 100%;
+    margin: 0  0 7px 0;
+    -webkit-animation: goDown 1s ease-in-out;
+    -moz-animation: goDown 1s ease-in-out;
+    -ms-animation: goDown 1s ease-in-out;
+    -o-animation: goDown 1s ease-in-out;
+    animation: goDown 1s ease-in-out;
+}
+
+#DivIdTableRowWrap{
+    z-index: 1;
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#DivIdColummLeft{
+    float: left;
+    height: 100%;
+    max-width: 25%;
+    display: inline;
+    margin: 7px;
+    /*background: red;*/
+}
+
+#DivIdColummRight{
+    float: left;
+    height: 100%;
+    display: inline;
+    margin: 15px;
+    /*background-color: green;*/
+}
+
+#DivIdLogoCar{
+    position: relative;
+    float: left;
+    top: 0px;
+    right: 100px;
+    width: 0px;
+    height: 0px;
+}
+
+#ImgIdCar{
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    max-height: 186px;
+    max-width: 290px;
+    float: left;
+    position: relative;
+    vertical-align: middle;
+    border-radius: 5px 5px 5px 5px;
+    opacity: 0.5;
+    box-shadow: 0 0 5px white;
+}
+
+#ImgIdCar:hover{
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    border-radius: 0px 0px 0px 0px;
+    opacity: 1;
+    box-shadow: 0 0 10px white;
+}
