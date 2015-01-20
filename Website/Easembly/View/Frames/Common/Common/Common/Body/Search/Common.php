@@ -1,7 +1,7 @@
 <main>
     <div id="DivIdTable">
         <?php
-            for($index=0; $index<10; $index++){
+            for($index=0; $index<0; $index++){
         ?>
             <div id="DivIdTableRow">
                 <div id="DivIdTableRowWrap">
