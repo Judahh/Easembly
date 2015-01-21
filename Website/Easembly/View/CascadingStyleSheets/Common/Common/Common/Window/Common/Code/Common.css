@@ -1,31 +1,33 @@
 #DivIdCodeTitle{
-    display: none;
-    position: fixed;
-    bottom:0;
-    top:0;
-    left:0;
-    right:0;
-    margin: 45px;
-    width:auto;
-    height:auto;
-    z-index: -1;
+    font-size: 40px;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+}
+
+#DivIdCodeTitleText{
+    height: 40px;
 }
 
 #DivIdTableCode{
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
 #DivIdColumnLine{
-    top: 0;
-    height: 45px;
-    width: 100%;
+    text-align: right;
+    opacity: 0.5;
+    float: left;
+    height: auto;
+    width: 45px;
 }
 
 #DivIdColumnCode{
-    position: absolute;
-    bottom: 15px;
-    right:30px;
-    height: 45px;
-    width: 100%;
+    font-family: "Arial", Arial, Sans-serif;
+    font-size: 19px;
+    padding: 5px;
+    float: left;
+    height: auto;
+    width: auto;
 }
