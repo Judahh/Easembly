@@ -6,7 +6,7 @@
 
 <body>
     <?php
-        include 'Body/Search/Common.php';
+        include 'Body/Common.php';
     ?>
 </body>
 
