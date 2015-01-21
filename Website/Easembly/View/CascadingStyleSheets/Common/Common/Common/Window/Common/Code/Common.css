@@ -1,0 +1,31 @@
+#DivIdCodeTitle{
+    display: none;
+    position: fixed;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin: 45px;
+    width:auto;
+    height:auto;
+    z-index: -1;
+}
+
+#DivIdTableCode{
+    height: 100%;
+    width: 100%;
+}
+
+#DivIdColumnLine{
+    top: 0;
+    height: 45px;
+    width: 100%;
+}
+
+#DivIdColumnCode{
+    position: absolute;
+    bottom: 15px;
+    right:30px;
+    height: 45px;
+    width: 100%;
+}

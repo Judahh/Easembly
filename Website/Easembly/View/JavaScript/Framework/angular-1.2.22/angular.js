@@ -1974,7 +1974,7 @@ function setupModuleLoader(window) {
  * - `major` – `{number}` – Major version number, such as "0".
  * - `minor` – `{number}` – Minor version number, such as "9".
  * - `dot` – `{number}` – Dot version number, such as "18".
- * - `codeName` – `{string}` – Code name of the release, such as "jiggling-armfat".
+ * - `codeName` – `{string}` – Main name of the release, such as "jiggling-armfat".
  */
 var version = {
   full: '1.2.22',    // all of these placeholder strings will be replaced by grunt's
@@ -12719,7 +12719,7 @@ function $RootScopeProvider(){
        *
        * ## Life cycle
        *
-       * # Pseudo-Code of `$apply()`
+       * # Pseudo-Main of `$apply()`
        * ```js
            function $apply(expr) {
              try {
