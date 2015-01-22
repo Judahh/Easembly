@@ -13,8 +13,9 @@
 }
 
 #DivIdTableCode{
+    background-color: #47a447;
     position: relative;
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 
@@ -25,6 +26,7 @@
 }
 
 #DivIdColumnLine{
+    background-color: #28a4c9;
     text-align: right;
     opacity: 0.5;
     float: left;
@@ -57,6 +59,10 @@
     height: 100%;
     max-height: 100%;
     min-height: 100%;
+}
+
+#TextAreaIdColumnCode{
+    resize: none;
 }
 
 #TextAreaIdColumnCode, #TextAreaIdColumnCode:hover, #TextAreaIdColumnCode:active, #TextAreaIdColumnCode:focus{
