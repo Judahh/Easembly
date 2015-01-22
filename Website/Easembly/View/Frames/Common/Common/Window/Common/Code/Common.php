@@ -6,25 +6,28 @@
     </div>
 </div>
 <div id="DivIdTableCode">
-    <div id="DivIdColumnLine">
-        <div id="DivIdText">
-            <?php
-                for($index=0;$index<100;$index++){
-                    echo $index."<br>";
-                }
-            ?>
-        </div>
-    </div>
-    <div id="DivIdColumnCode">saasdc
-        <div id="DivTextAreaIdColumnCode">
-            <textarea id="TextAreaIdColumnCode">
+    <div id="DivIdTableCodeWrap">
+        <div id="DivIdColumnLine">
+            <div id="DivIdText">
                 <?php
-                    for($index2=0;$index2<$index;$index2++){
-                        echo "Code Example ".$index2."
-                        ";
+                    for($index=0;$index<100;$index++){
+                        echo $index."<br>";
                     }
                 ?>
-            </textarea>
+            </div>
+        </div>
+        <div id="DivIdColumnCode">
+            <div id="DivTextAreaIdColumnCodeTemp">asdfasdfasdfasdfasdf</div>
+            <div id="DivTextAreaIdColumnCode">
+                <textarea id="TextAreaIdColumnCode">
+                    <?php
+                        for($index2=0;$index2<$index;$index2++){
+                            echo "Code Example ".$index2."
+                            ";
+                        }
+                    ?>
+                </textarea>
+            </div>
         </div>
     </div>
 </div>
