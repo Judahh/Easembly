@@ -1,5 +1,8 @@
+#DivIdCode{
+    width: 100%;
+}
+
 #DivIdCodeTitle{
-    position: relative;
     font-size: 40px;
     height: 45px;
     text-align: center;
@@ -7,56 +10,51 @@
 }
 
 #DivIdCodeTitleText{
-    position: relative;
     height: 40px;
+    width: 100%;
     font-size: 40px;
 }
 
-#DivIdTableCode{
-    position: relative;
-    height: auto;
+#DivIdTableCodeWrap{
     width: 100%;
 }
 
-#DivIdTableCodeWrap{
+#TableIdCode{
     height: 100%;
     width: 100%;
-    background-color: blue;
 }
 
-#DivIdColumnLine{
+#TrIdCode{
+    width: 100%;
+}
+
+#TdIdColumnLine{
     float: left;
     text-align: right;
     opacity: 0.5;
+    box-sizing: border-box;
     height: 100%;
     width: 45px;
-    background-color: green;
 }
 
-#DivIdColumnCode{
+#TdIdColumnCode{
     float: left;
     width: auto;
     height: 100%;
-    background-color: red;
 }
 
-#DivTextAreaIdColumnCodeTemp{
-    height: 100%;
-}
-
-#DivTextAreaIdColumnCode{
+#DivTextAreaIdColumnCode, #DivTextAreaIdColumnCode:hover, #DivTextAreaIdColumnCode:active, #DivTextAreaIdColumnCode:focus{
     width: 100%;
     height: 100%;
-}
-
-#TextAreaIdColumnCode, #TextAreaIdColumnCode:hover, #TextAreaIdColumnCode:active, #TextAreaIdColumnCode:focus{
-    resize: none;
-    width: 100%;
-    height: 100%;
-
     font-family: "Arial", Arial, Sans-serif;
     font-size: 19px;
     padding: 5px;
 
     border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }

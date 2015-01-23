@@ -1,33 +1,35 @@
-<div id="DivIdCodeTitle">
-    <div id="DivIdText">
-        <div id="DivIdCodeTitleText">
-            Code Title
+<div id="DivIdCode">
+    <div id="DivIdCodeTitle">
+        <div id="DivIdText">
+            <div id="DivIdCodeTitleText">
+                Code Title
+            </div>
         </div>
     </div>
-</div>
-<div id="DivIdTableCode">
     <div id="DivIdTableCodeWrap">
-        <div id="DivIdColumnLine">
-            <div id="DivIdText">
-                <?php
-                    for($index=0;$index<100;$index++){
-                        echo $index."<br>";
-                    }
-                ?>
-            </div>
-        </div>
-        <div id="DivIdColumnCode">
-            <div id="DivTextAreaIdColumnCodeTemp">asdfasdfasdfasdfasdf</div>
-            <div id="DivTextAreaIdColumnCode">
-                <textarea id="TextAreaIdColumnCode">
-                    <?php
-                        for($index2=0;$index2<$index;$index2++){
-                            echo "Code Example ".$index2."
-                            ";
-                        }
-                    ?>
-                </textarea>
-            </div>
-        </div>
+        <table id="TableIdCode">
+            <?php
+                for($index=1;$index<11;$index++) {
+            ?>
+                    <tr id="TrIdCode">
+                        <td id="TdIdColumnLine">
+                            <div id="DivIdText">
+                                <?php
+                                    echo $index."<br>";
+                                ?>
+                            </div>
+                        </td>
+                        <td id="TdIdColumnCode">
+                            <div id="DivTextAreaIdColumnCode" contenteditable="true">
+                                <?php
+                                    echo "Code Example " . $index;
+                                ?>
+                            </div>
+                        </td>
+                    </tr>
+            <?php
+                }
+            ?>
+        </table>
     </div>
 </div>
