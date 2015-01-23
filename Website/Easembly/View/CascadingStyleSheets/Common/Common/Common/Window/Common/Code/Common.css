@@ -22,6 +22,10 @@
 #TableIdCode{
     height: 100%;
     width: 100%;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
 }
 
 #TrIdCode{
@@ -29,7 +33,17 @@
 }
 
 #TrIdCode:hover, #TrIdCode:active, #TrIdCode:focus{
-    background-color: deepskyblue;
+    background-color: dodgerblue;
+}
+
+#TrIdCode::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: deepskyblue;
+}
+
+#TrIdCode::selection {
+    color: white;
+    background: deepskyblue;
 }
 
 #TdIdColumnLine{
@@ -42,6 +56,17 @@
     min-width: 45px;
     width: 45px;
     max-width: 90px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#DivIdColumnText {
+    font-size: 20px;
 }
 
 #TdIdColumnCode{
@@ -49,6 +74,16 @@
 
     height: 100%;
     width: auto;
+}
+
+#TdIdColumnCode::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: deepskyblue;
+}
+
+#TdIdColumnCode::selection {
+    color: white;
+    background: deepskyblue;
 }
 
 #DivTextAreaIdColumnCode, #DivTextAreaIdColumnCode:hover, #DivTextAreaIdColumnCode:active, #DivTextAreaIdColumnCode:focus{
@@ -67,4 +102,14 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+}
+
+#DivTextAreaIdColumnCode::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: deepskyblue;
+}
+
+#DivTextAreaIdColumnCode::selection {
+    color: white;
+    background: deepskyblue;
 }
