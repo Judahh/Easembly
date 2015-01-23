@@ -9,7 +9,7 @@
     <div id="DivIdTableCodeWrap">
         <table id="TableIdCode">
             <?php
-                for($index=1;$index<11;$index++) {
+                for($index=1;$index<51;$index++) {
             ?>
                     <tr id="TrIdCode">
                         <td id="TdIdColumnLine">
