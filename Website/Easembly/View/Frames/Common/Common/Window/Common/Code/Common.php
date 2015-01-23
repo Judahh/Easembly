@@ -1,13 +1,13 @@
 <div id="DivIdCode">
     <div id="DivIdCodeTitle">
         <div id="DivIdText">
-            <div id="DivIdCodeTitleText">
+            <div id="DivIdCodeTitleText" contenteditable="true">
                 Code Title
             </div>
         </div>
     </div>
     <div id="DivIdTableCodeWrap">
-        <table id="TableIdCode">
+        <table id="TableIdCode" border="0" cellpadding="0" cellspacing="0">
             <?php
                 for($index=1;$index<51;$index++) {
             ?>
