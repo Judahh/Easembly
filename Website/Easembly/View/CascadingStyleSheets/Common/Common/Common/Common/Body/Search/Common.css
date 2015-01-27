@@ -33,7 +33,7 @@ main{
 }
 
 #DivIdTableRow{
-    height: 100%;
+    height: 200px;
     width: 100%;
     margin: 0  0 7px 0;
     -webkit-animation: goDown 1s ease-in-out;

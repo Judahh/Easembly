@@ -1,5 +1,5 @@
 <head>
-    <title>4Carrus</title>
+    <title>Easembly</title>
     <meta content="text/html" charset="UTF-8"/>
 
     <link href="View/CascadingStyleSheets/Common/Common/Common/Common/Body/Search/Common.css" rel="stylesheet" media="all" type="text/css">
