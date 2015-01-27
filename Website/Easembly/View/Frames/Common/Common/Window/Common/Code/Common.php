@@ -1,31 +1,44 @@
-<div id="DivIdCodeTitle">
-    <div id="DivIdText">
-        <div id="DivIdCodeTitleText">
-            Code Title
-        </div>
-    </div>
-</div>
-<div id="DivIdTableCode">
-    <div id="DivIdColumnLine">
+<div id="DivIdCode">
+    <div id="DivIdProjectTitle">
         <div id="DivIdText">
-            <?php
-                for($index=0;$index<100;$index++){
-                    echo $index."<br>";
-                }
-            ?>
+            <div id="DivIdProjectTitleText" contenteditable="true">
+                Project Title
+            </div>
         </div>
     </div>
-    <div id="DivIdColumnCode">
-        saasjhgkjhgkjhgkgkgjkgkjgkhgkhgkjhgkjgjhgkjhgkghkjhgkjhgkjgkjhgkjhgkjdc
-        <div id="DivTextAreaIdColumnCode">
-            <textarea id="TextAreaIdColumnCode">
+
+    <div id="DivIdCodeTitle">
+        <div id="DivIdText">
+            <div id="DivIdCodeTitleText" contenteditable="true">
+                Code Title
+            </div>
+        </div>
+    </div>
+
+    <div id="DivIdTableCodeWrap">
+        <table id="TableIdCode" border="0" cellpadding="0" cellspacing="0" contenteditable="true">
+            <tbody>
                 <?php
-                    for($index2=0;$index2<$index;$index2++){
-                        echo "Code Example ".$index2."
-                        ";
+                    for($index=1;$index<51;$index++) {
+                ?>
+                        <tr id="TrIdCode">
+                            <td id="TdIdColumnLine" contenteditable="false">
+                                <div id="DivIdText" contenteditable="false">
+                                    <div id="DivIdColumnLineText" contenteditable="false"></div>
+                                </div>
+                            </td>
+                            <td id="TdIdColumnCode">
+                                <div id="DivIdColumnCodeText">
+                                    <?php
+                                        echo "Code Example " . $index;
+                                    ?>
+                                </div>
+                            </td>
+                        </tr>
+                <?php
                     }
                 ?>
-            </textarea>
-        </div>
+            </tbody>
+        </table>
     </div>
 </div>
