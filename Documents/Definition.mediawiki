@@ -16,6 +16,7 @@
 *	Todos os códigos deverão seguir o mesmo padrão
 *	Comunidade Online para discussão/criação de projetos/equipes/empresas online.
 *	Engine para pagamento de funcionários de maneira tradicional e por desempenho.
+* Incluir gamification
 == Easembly (core) ==
 * Dividido entre Easembly específico o qual só possui instruções Easembly baseadas nas instruções de um micro/família específica e o genérico que é um Easembly que tem todas as instruções de todos os micros e que funciona em todos além de instruções para facilitar a codificação (aquelas que forem julgadas necessárias). 
 === Exemplos de Easembly Específico ===
