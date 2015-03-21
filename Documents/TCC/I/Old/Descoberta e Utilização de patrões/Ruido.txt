@@ -1,0 +1,2 @@
+(tan(x^x)+sec(x^{-x})(sin(x^x)(cos(x^{-x})))
+Define-se ruino como uma pertubacao sonora sem padrao.

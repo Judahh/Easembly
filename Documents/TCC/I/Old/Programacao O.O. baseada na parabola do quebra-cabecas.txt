@@ -1,0 +1,7 @@
+mostrar que em mutos casos a nao divisao de classes inicial se demonstra uma tecnica mais rapida e eficiente e ajuda na dimuinuicao da complexidade.
+Ao criar classes que se tem um bom conhecimento de suas funcionalidades e tem funcoes bem especificas, vale a pena jah criar estas classes no projeto inicial.
+Mas quando nao eh interessante fazer apenas uma classe e criar todos os modulos necessarios ou ate que as classes jah estejam com um formato bem definido.
+Eh como se o programa fosse um grande quebra-cabecas onde cada funcao eh uma peca de um quebra-cabecas menor (que sao as classes) que sao pecas do programa.
+Ao se ter a ideia iniciar dos programas estas pecas estao todas misturadas na cabeca, com ecessao de algumas que jah estao parcialmente separadas.
+As parcialmente separadas provavelmente sao as classes bem definidas, mais ainda existe o outro montante que nao esta separado adequadamente.como num quebra-cabecas tradicional  se vai montando e em algum momento se formam conjuntos bem definidos e sepacardos como se fossem pequenos quebra-cabecas prontos que estes entao sao pecas de um quebra cabecas maior.
+O que se propoe eh fazer o mesmo enquanto nao se tem uma ideia formada e fixa de como seram as classes do projeto comessar fazendo um versao temporaria do projeto com uma classe unica representando as classes sem formacao definida e a medida que se vai programando, e verificando a consistencia da classe ai sim as dividindo.

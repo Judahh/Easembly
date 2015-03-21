@@ -1,0 +1,25 @@
+Byte(unsigned)-0 - 255 (8bits)
+Int(unsigned) -0 - 4294967295 (32bits)
+char -0 - 255 (C/C++) ou 0 - 65535 (Java)
+
+-Um inteiro(unsigned) para altura
+-Um inteiro(unsigned) para largura
+-Tres(Hue,Sat,Lum) bytes(unsigned) pra cada cor de imagem
+-um inteiro(unsigned) ou vetor de inteiro(unsigned) para cada cor
+
+Caso da figura feita:
+tam:000000000000000000000000000000010,000000000000000000000000000000010
+cor1:00000000,00000000,00000000,000000000000000000000000000001010
+cor2:00000000,00000000,11111111,000000000000000000000000000000101
+total:128+48=176 bits ou 22 bytes
+
+Sem o ultimo inteiro da ultima cor:
+total:176-32=144 bits ou 18 bytes
+
+Mais pulo de linha para facilitar 1 para o tamanho e mais 1 para cada cor, no caso de cima 3 pulos:
+total:176+24=200 bits ou 25 bytes
+
+Sem o ultimo inteiro da ultima cor mais pulo:
+total:200-32=168 bits ou 21 bytes
+
+Desde 1/5 do tamanho ate 1/50 do tamanho

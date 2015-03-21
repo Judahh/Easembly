@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://en.wikipedia.org/wiki/Java_bytecode_instruction_listings -->
+<html lang="en" dir="ltr" class="client-js ve-not-available"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Java bytecode instruction listings - Wikipedia, the free encyclopedia</title>
+<meta name="generator" content="MediaWiki 1.25wmf17">
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Java_bytecode_instruction_listings">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&action=edit">
+<link rel="edit" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&action=edit">
+<link rel="apple-touch-icon" href="http://bits.wikimedia.org/apple-touch/wikipedia.png">
+<link rel="shortcut icon" href="http://bits.wikimedia.org/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://en.wikipedia.org/w/api.php?action=rsd">
+<link rel="alternate" hreflang="x-default" href="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/Java bytecode instruction listings - Wikipedia, the free encyclopedia.html">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom">
+<link rel="canonical" href="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/Java bytecode instruction listings - Wikipedia, the free encyclopedia.html">
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cext.wikihiero%2CwikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles%7Cwikibase.client.init%2Cnolanglinks&only=styles&skin=vector&*">
+<style>
+@-webkit-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-webkit-transform:translateY(-20px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-moz-transform:translateY(-20px)}100%{opacity:1;-moz-transform:translateY(0)}}@-o-keyframes centralAuthPPersonalAnimation{0%{opacity:0;-o-transform:translateY(-20px)}100%{opacity:1;-o-transform:translateY(0)}}@keyframes centralAuthPPersonalAnimation{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}.centralAuthPPersonalAnimation{-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:centralAuthPPersonalAnimation;-moz-animation-name:centralAuthPPersonalAnimation;-o-animation-name:centralAuthPPersonalAnimation;animation-name:centralAuthPPersonalAnimation}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:0dcacc990dd02e7db9669ab3090b80f1 */
+.mw-viewPageTarget-loading{width:128px;height:15px;float:right} .mw-editsection{white-space:nowrap; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555}.ve-tabmessage-appendix{font-size:0.7em;vertical-align:top;line-height:1.43em;padding-left:0.5em; background-image:none !important;display:inline !important} .mw-viewPageTarget-loading{background-image:url(data:image/gif;base64,R0lGODlhgAAPAPEAAP///6fX+eXy/KfX+SH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAgAAPAAACo5QvoIC33NKKUtF3Z8RbN/55CEiNonMaJGp1bfiaMQvBtXzTpZuradUDZmY+opA3DK6KwaQTCbU9pVHc1LrDUrfarq765Ya9u+VRzLyO12lwG10yy39zY11Jz9t/6jf5/HfXB8hGWKaHt6eYyDgo6BaH6CgJ+QhnmWWoiVnI6ddJmbkZGkgKujhplNpYafr5OooqGst66Uq7OpjbKmvbW/p7UAAAIfkECQoAAAAsAAAAAIAADwAAArCcP6Ag7bLYa3HSZSG2le/Zgd8TkqODHKWzXkrWaq83i7V5s6cr2f2TMsSGO9lPl+PBisSkcekMJphUZ/OopGGfWug2Jr16x92yj3w247bh6teNXseRbyvc0rbr6/x5Ng0op4YSJDb4JxhI58eliEiYYujYmFi5eEh5OZnXhylp+RiaKQpWeDf5qQk6yprawMno2nq6KlsaSauqS5rLu8cI69k7+ytcvGl6XDtsyzxcAAAh+QQJCgAAACwAAAAAgAAPAAACvpw/oIC3IKIUb8pq6cpacWyBk3htGRk1xqMmZviOcemdc4R2kF3DvfyTtFiqnPGm+yCPQdzy2RQMF9Moc+fDArU0rtMK9SYzVUYxrASrxdc0G00+K8ruOu+9tmf1W06ZfsfXJfiFZ0g4ZvEndxjouPfYFzk4mcIICJkpqUnJWYiYs9jQVpm4edqJ+lkqikDqaZoquwr7OtHqAFerqxpL2xt6yQjKO+t7bGuMu1L8a5zsHI2MtOySVwo9fb0bVQAAIfkECQoAAAAsAAAAAIAADwAAAsucP6CAt9zSErSKZyvOd/KdgZaoeaFpRZKiPi1aKlwnfzBF4jcNzDk/e7EiLuLuhzwqayfmaNnjCCGNYhXqw9qcsWjT++TqxIKp2UhOprXf7PoNrpyvQ3p8fAdu82o+O5w3h2A1+Nfl5geHuLgXhEZVWBeZSMnY1oh5qZnyKOhgiGcJKHqYOSrVmWpHGmpauvl6CkvhaUD4qejaOqvH2+doV7tSqdsrexybvMsZrDrJaqwcvSz9i9qM/Vxs7Qs6/S18a+vNjUx9/v1TAAAh+QQJCgAAACwAAAAAgAAPAAAC0Zw/oIC33NKKUomLxct4c718oPV5nJmhGPWwU9TCYTmfdXp3+aXy+wgQuRRDSCN2/PWAoqVTCSVxilQZ0RqkSXFbXdf3ZWqztnA1eUUbEc9wm8yFe+VguniKPbNf6mbU/ubn9ieUZ6hWJAhIOKbo2Pih58C3l1a5OJiJuflYZidpgHSZCOnZGXc6l3oBWrE2aQnLWYpKq2pbV4h4OIq1eldrigt8i7d73Ns3HLjMKGycHC1L+hxsXXydO9wqOu3brPnLXL3C640sK+6cTaxNflEAACH5BAkKAAAALAAAAACAAA8AAALVnD+ggLfc0opS0SeyFnjn7oGbqJHf4mXXFD2r1bKNyaEpjduhPvLaC5nJEK4YTKhI1ZI334m5g/akJacAiDUGiUOHNUd9ApTgcTN81WaRW++Riy6Tv/S4dQ1vG4ps4NwOaBYlOEVYhYbnplexyJf3ZygGOXkWuWSZuNel+aboV0k5GFo4+qN22of6CMoq2kr6apo6m5fJWCoZm+vKu2Hr6KmqiHtJLKebRhuszNlYZ3ncewh9J9z8u3mLHA0rvetrzYjd2Wz8bB6oNO5MLq6FTp2+bVUAACH5BAkKAAAALAAAAACAAA8AAALanD+ggLfc0opS0XeX2Fy8zn2gp40ieHaZFWHt9LKNO5eo3aUhvisj6RutIDUZgnaEFYnJ4M2Z4210UykQ8BtqY0yHstk1UK+/sdk63i7VYLYX2sOa0HR41S5wi7/vcMWP1FdWJ/dUGIWXxqX3xxi4l0g4GEl5yOHIBwmY2cg1aXkHSjZXmbV4uoba5kkqelbaapo6u0rbN/SZG7trKFv7e6savKTby4voaoVpNAysiXscV4w8fSn8fN1pq1kd2j1qDLK8yYy9/ff9mgwrnv2o7QwvGO1ND049UgAAIfkECQoAAAAsAAAAAIAADwAAAticP6CAt9zSilLRd2d8onvBfV0okp/pZdamNRi7ui3yyoo4Ljio42h+w6kgNiJt5kAaasdYE7D78YKlXpX6GWphxqTT210qK1Cf9XT2SKXbYvv5Bg+jaWD5ekdjU9y4+PsXRuZHRrdnZ5inVidAyCTXF+nGlVhpdjil2OE49hjICVh4qZlpibcDKug5KAlHOWqqR8rWCjl564oLFruIucaYGlz7+XoKe2wsIqxLzMxaxIuILIs6/JyLbZsdGF063Uu6vH2tXc79LZ1MLWS96t4JH/rryzhPWgAAIfkECQoAAAAsAAAAAIAADwAAAtWcP6CAt9zSilLRd2fEe4kPCk8IjqTonZnVsQ33arGLwLV8Kyeqnyb5C60gM2LO6MAlaUukwdbcBUspYFXYcla00KfSywRzv1vpldqzprHFoTv7bsOz5jUaUMer5vL+Mf7Hd5RH6HP2AdiUKLa41Tj1Acmjp0bJFuinKKiZyUhnaBd5OLnzSNbluOnZWQZqeVdIYhqWyop6ezoquTs6O0aLC5wrHErqGnvJibms3LzKLIYMe7xnO/yL7TskLVosqa1aCy3u3FrJbSwbHpy9fr1NfR4fUgAAIfkECQoAAAAsAAAAAIAADwAAAsqcP6CAt9zSilLRd2fEW7cnhKIAjmFpZla3fh7CuS38OrUR04p5Ljzp46kgMqLOaJslkbhbhfkc/lAjqmiIZUFzy2zRe5wGTdYQuKs9N5XrrZPbFu94ZYE6ms5/9cd7/T824vdGyIa3h9inJQfA+DNoCHeomIhWGUcXKFIH6RZZ6Bna6Zg5l8JnSamayto2WtoI+4jqSjvZelt7+URKpmlmKykM2vnqa1r1axdMzPz5LLooO326Owxd7Bzam4x8pZ1t3Szu3VMOdF4AACH5BAkKAAAALAAAAACAAA8AAAK/nD+ggLfc0opS0XdnxFs3/i3CSApPSWZWt4YtAsKe/DqzXRsxDqDj6VNBXENakSdMso66WzNX6fmAKCXRasQil9onM+oziYLc8tWcRW/PbGOYWupG5Tsv3TlXe9/jqj7ftpYWaPdXBzbVF2eId+jYCAn1KKlIApfCSKn5NckZ6bnJpxB2t1kKinoqJCrlRwg4GCs4W/jayUqamaqryruES2b72StsqgvsKlurDEvbvOx8mzgazNxJbD18PN1aUgAAIfkECQoAAAAsAAAAAIAADwAAArKcP6CAt9zSilLRd2fEWzf+ecgjlKaQWZ0asqPowAb4urE9yxXUAqeZ4tWEN2IOtwsqV8YkM/grLXvTYbV4PTZpWGYU9QxTxVZyd4wu975ZZ/qsjsPn2jYpatdx62b+2y8HWMTW5xZoSIcouKjYePeTh7TnqFcpabmFSfhHeemZ+RkJOrp5OHmKKapa+Hiyyokaypo6q1CaGDv6akoLu3DLmLuL28v7CdypW6vsK9vsE1UAACH5BAkKAAAALAAAAACAAA8AAAKjnD+ggLfc0opS0XdnxFs3/nkISI2icxokanVt+JoxC8G1fNOlm6tp1QNmZj6ikDcMrorBpBMJtT2lUdzUusNSt9qurvrlhr275VHMvI7XaXAbXTLLf3NjXUnP23/qN/n8d9cHyEZYpoe3p5jIOCjoFofoKAn5CGeZZaiJWcjp10mZuRkaSAq6OGmU2lhp+vk6iioay3rpSrs6mNsqa9tb+ntQAAA7AAAAAAAAAAAA);background-image:url(//bits.wikimedia.org/static-1.25wmf17/extensions/VisualEditor/modules/ve-mw/init/styles/images/loading-ltr.gif?2015-02-11T19:35:00Z)!ie}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:f523e02431f0de14598d2dc08b0701c1 */
+.uls-menu a{cursor:pointer}.uls-menu.callout .caret-before{border-top:20px solid transparent;border-right:20px solid #C9C9C9;border-bottom:20px solid transparent;display:inline-block;left:-21px;top:30px;position:absolute}.uls-menu.callout .caret-after{border-top:20px solid transparent;border-right:20px solid #FCFCFC;border-bottom:20px solid transparent;display:inline-block;left:-20px;top:30px;position:absolute}.uls-ui-languages button{width:23%;text-overflow:ellipsis;margin-right:4%}button.uls-more-languages{width:auto}.settings-title{font-size:11pt}.settings-text{color:#555555;font-size:9pt}div.display-settings-block:hover .settings-text{color:#252525}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:22d1681fa868b4ff4fbcb1ec1e58a9ea */
+.tipsy{padding:5px;position:absolute;z-index:100000;cursor:default}.tipsy-inner{padding:5px 8px 4px 8px; background-color:#ffffff;border:solid 1px #a7d7f9;color:black;max-width:15em;border-radius:4px; }.tipsy-arrow{position:absolute;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEX5+fmn1/n///9s6BFKAAAAAXRSTlMAQObYZgAAACpJREFUCB1jZBD4wMiQMoeRcUU4I9uSaYxSE54xZjn8AtMgPkgcJA9UBwAeDw1Qrb3pVAAAAABJRU5ErkJggg==) no-repeat top left;background:url(//bits.wikimedia.org/static-1.25wmf17/resources/src/jquery.tipsy/images/tipsy.png?2015-02-11T19:30:00Z) no-repeat top left!ie;width:11px;height:6px} .tipsy-n .tipsy-arrow{top:0px;left:50%;margin-left:-5px} .tipsy-nw .tipsy-arrow{top:1px;left:10px} .tipsy-ne .tipsy-arrow{top:1px;right:10px} .tipsy-s .tipsy-arrow{bottom:0px;left:50%;margin-left:-5px;background-position:bottom left} .tipsy-sw .tipsy-arrow{bottom:0px;left:10px;background-position:bottom left} .tipsy-se .tipsy-arrow{bottom:0px;right:10px;background-position:bottom left} .tipsy-e .tipsy-arrow{top:50%;margin-top:-5px;right:1px;width:5px;height:11px;background-position:top right} .tipsy-w .tipsy-arrow{top:50%;margin-top:-5px;left:0px;width:6px;height:11px} .tipsy{font-size:0.8em}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:1ec4647b8cbc5c1b93b5d0531f14e78b */
+@media print{#centralNotice{display:none}}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ddb0c98a055632ae8e349c9cf48ac703 */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(//bits.wikimedia.org/static-1.25wmf17/resources/src/mediawiki.action/images/green-checkmark.png?2015-02-11T19:30:00Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:35402b2ab48d70a0f8d0b25b0d6a6de3 */
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:869aa9133c31e6040d4830b259da96a8 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:f8d0c6895ce3ae14434c16b8fca59432 */
+.wp-teahouse-question-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}#wp-th-question-ask{float:right}.wp-teahouse-ask a.external{background-image:none !important}.wp-teahouse-respond-form{position:absolute;margin-left:auto;margin-right:auto;background-color:#f4f3f0;border:1px solid #a7d7f9;padding:1em}.wp-th-respond{float:right}.wp-teahouse-respond a.external{background-image:none !important}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:8614dfa7ef847fc9bfcc2d1c9f720197 */
+.referencetooltip{position:absolute;list-style:none;list-style-image:none;opacity:0;font-size:10px;margin:0;z-index:5;padding:0}.referencetooltip li{border:#080086 2px solid;max-width:260px;padding:10px 8px 13px 8px;margin:0px;background-color:#F7F7F7;box-shadow:2px 4px 2px rgba(0,0,0,0.3);-moz-box-shadow:2px 4px 2px rgba(0,0,0,0.3);-webkit-box-shadow:2px 4px 2px rgba(0,0,0,0.3)}.referencetooltip li+li{margin-left:7px;margin-top:-2px;border:0;padding:0;height:3px;width:0px;background-color:transparent;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;border-top:12px #080086 solid;border-right:7px transparent solid;border-left:7px transparent solid}.referencetooltip>li+li::after{content:'';border-top:8px #F7F7F7 solid;border-right:5px transparent solid;border-left:5px transparent solid;margin-top:-12px;margin-left:-5px;z-index:1;height:0px;width:0px;display:block}.client-js body .referencetooltip li li{border:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;height:auto;width:auto;margin:auto;padding:0;position:static}.RTflipped{padding-top:13px}.referencetooltip.RTflipped li+li{position:absolute;top:2px;border-top:0;border-bottom:12px #080086 solid}.referencetooltip.RTflipped li+li::after{border-top:0;border-bottom:8px #F7F7F7 solid;position:absolute;margin-top:7px}.RTsettings{float:right;height:24px;width:24px;cursor:pointer;background-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Gear_icon.svg/24px-Gear_icon.svg.png);background-image:linear-gradient(transparent,transparent),url(//upload.wikimedia.org/wikipedia/commons/7/77/Gear_icon.svg);margin-top:-9px;margin-right:-7px;-webkit-transition:opacity 0.15s;-moz-transition:opacity 0.15s;-o-transition:opacity 0.15s;-ms-transition:opacity 0.15s;transition:opacity 0.15s;opacity:0.6;filter:alpha(opacity=60)}.RTsettings:hover{opacity:1;filter:alpha(opacity=100)}.RTTarget{border:#080086 2px solid}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:1a7de28fa04cd61435c75627cef69e87 */
+.skin-vector li.GA,.skin-monobook li.GA,.skin-modern li.GA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/4/42/Monobook-bullet-ga.png)} .skin-vector li.FA,.skin-monobook li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/d/d4/Monobook-bullet-star.png)}.skin-modern li.FA{list-style-image:url(//upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Modern-bullet-star.svg/9px-Modern-bullet-star.svg.png)}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:22ca6c0fc9d0923a196f8a3aec796994 */
+.mw-ui-icon{position:relative;min-height:1.4em;min-width:1.4em}.mw-ui-icon.mw-ui-icon-element{text-indent:-999px;overflow:hidden;width:3.4em;min-width:3.4em;max-width:3.4em}.mw-ui-icon.mw-ui-icon-element:before{left:0;right:0;position:absolute;margin:0 1em}.mw-ui-icon.mw-ui-icon-after:after,.mw-ui-icon.mw-ui-icon-before:before,.mw-ui-icon.mw-ui-icon-element:before{background-position:50% 50%;float:left;display:block;background-repeat:no-repeat;background-size:100% auto;min-height:1.4em;content:''}.mw-ui-icon.mw-ui-icon-before:before{position:relative;width:1.4em;margin-right:1em}.mw-ui-icon.mw-ui-icon-after:after{position:relative;float:right;width:1.4em;margin-left:1em}.mw-ui-icon-ok.mw-ui-icon:after,.mw-ui-icon-ok.mw-ui-icon:before{background-image:url(//bits.wikimedia.org/static-1.25wmf17/resources/src/mediawiki.ui/components/images/ok.png?2015-02-11T19:30:00Z);background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%3E%3Cpath%20d%3D%22M18.125%201.813l-10.5%2010.75-3.844-3.75L0%2012.719l7.72%207.452L22%205.625z%22%20fill%3D%22%23f0f0f0%22%2F%3E%3C%2Fsvg%3E%0A);background-image:-webkit-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.25wmf17/resources/src/mediawiki.ui/components/images/ok.svg?2015-02-11T19:30:00Z)!ie;background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%3E%3Cpath%20d%3D%22M18.125%201.813l-10.5%2010.75-3.844-3.75L0%2012.719l7.72%207.452L22%205.625z%22%20fill%3D%22%23f0f0f0%22%2F%3E%3C%2Fsvg%3E%0A);background-image:linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.25wmf17/resources/src/mediawiki.ui/components/images/ok.svg?2015-02-11T19:30:00Z)!ie}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:28ec956b329f58d85044e80a63b5f3e1 */
+#p-lang .uls-settings-trigger{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAgCAQAAACI54EcAAAAAnNCSVQICFXsRgQAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAABWklEQVQoz42RwWrCQBBAc/PkyXiQfpEXobKzEsipCkKh5CBUhBBmaWrw6j/oIQr6VeaSXzDpZDbZ1CWVMhBm5zGT2X1O6fwdv1L0saTwLajmar0d4JHh6XuEofqooVpiQcU7ozbeGWJklXVEGrrcWWKOCUXOeYEuQeXhQaNdv/rPrl/jFH3HjEnM1klTa2FsYNzCBV45zfa9Cu17mPH5gm903A7rhW60d0Rf7opf9D03nVf50jCwyjxHrZvnCzCkR0sZndFVK/y0Hl7NGC46rTxV9hRKH0oope0T5nL9OhDHCsJpOhKhaHyKJRRUvDMyIbRPiB7LdWifnsudJeSQUOScF17lU3pw0GjCPid9jWUqfceMMT6pu6610PiE2ECxgCun2Zh9jnuQ8fkiK58wrBe60d4RfXWf9ik2XVeR2icEFuA5svEJgQinI5kyOnuuWAnbJ8z42f7r8wfhovZYX3llNQAAAABJRU5ErkJggg==) no-repeat right top;background:transparent url(//bits.wikimedia.org/static-1.25wmf17/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.png?2015-02-11T19:33:20Z) no-repeat right top!ie;background-image:-webkit-linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2214%22%20height%3D%2232%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M14%209.3V6.73l-1.575-.264c-.117-.44-.292-.848-.496-1.2l.93-1.285-1.81-1.84-1.31.908c-.38-.205-.79-.38-1.196-.497L8.284%201H5.716l-.263%201.578c-.437.117-.816.293-1.196.497L2.975%202.17%201.137%203.98l.934%201.287c-.2.38-.376.79-.493%201.228L0%206.73V9.3l1.575.264c.117.438.292.818.496%201.198l-.93%201.315L2.95%2013.89l1.312-.938c.38.205.787.38%201.224.497L5.746%2015h2.566l.263-1.578c.408-.117.817-.293%201.196-.497l1.315.935%201.81-1.812-.935-1.315c.203-.38.38-.76.495-1.2L14%209.303zm-7%201.404c-1.488%200-2.683-1.2-2.683-2.69S5.542%205.327%207%205.327c1.458%200%202.683%201.198%202.683%202.69%200%201.49-1.195%202.688-2.683%202.688z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23808080%22%2F%3E%3Cuse%20transform%3D%22translate%280%2016%29%22%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E%0A);background-image:-webkit-linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.25wmf17/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2015-02-11T19:33:20Z)!ie;background-image:linear-gradient(transparent,transparent),url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2214%22%20height%3D%2232%22%3E%3Cdefs%3E%3Cpath%20d%3D%22M14%209.3V6.73l-1.575-.264c-.117-.44-.292-.848-.496-1.2l.93-1.285-1.81-1.84-1.31.908c-.38-.205-.79-.38-1.196-.497L8.284%201H5.716l-.263%201.578c-.437.117-.816.293-1.196.497L2.975%202.17%201.137%203.98l.934%201.287c-.2.38-.376.79-.493%201.228L0%206.73V9.3l1.575.264c.117.438.292.818.496%201.198l-.93%201.315L2.95%2013.89l1.312-.938c.38.205.787.38%201.224.497L5.746%2015h2.566l.263-1.578c.408-.117.817-.293%201.196-.497l1.315.935%201.81-1.812-.935-1.315c.203-.38.38-.76.495-1.2L14%209.303zm-7%201.404c-1.488%200-2.683-1.2-2.683-2.69S5.542%205.327%207%205.327c1.458%200%202.683%201.198%202.683%202.69%200%201.49-1.195%202.688-2.683%202.688z%22%20id%3D%22a%22%2F%3E%3C%2Fdefs%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23808080%22%2F%3E%3Cuse%20transform%3D%22translate%280%2016%29%22%20xlink%3Ahref%3D%22%23a%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E%0A);background-image:linear-gradient(transparent,transparent),url(//bits.wikimedia.org/static-1.25wmf17/extensions/UniversalLanguageSelector/resources/css/../images/cog-sprite.svg?2015-02-11T19:33:20Z)!ie;height:16px;width:14px;float:right;cursor:pointer}.skin-vector #p-lang .uls-settings-trigger{ margin-top:3px}#p-lang .uls-settings-trigger:hover{background-position:right -16px}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:fd31bded631c50fc979e1c9dcada9952 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */
+.mw-mmv-overlay{position:fixed;top:0px;left:0px;right:0px;bottom:0px;z-index:1000;background-color:#000000}body.mw-mmv-lightbox-open{overflow-y:auto}body.mw-mmv-lightbox-open #mw-page-base,body.mw-mmv-lightbox-open #mw-head-base,body.mw-mmv-lightbox-open #mw-navigation,body.mw-mmv-lightbox-open #content,body.mw-mmv-lightbox-open #footer,body.mw-mmv-lightbox-open #globalWrapper // monobook{ display:none}body.mw-mmv-lightbox-open > *{ display:none}body.mw-mmv-lightbox-open > .mw-mmv-overlay,body.mw-mmv-lightbox-open > .mw-mmv-wrapper{display:block}.mw-mmv-filepage-buttons{margin-top:5px}.mw-mmv-filepage-buttons .mw-mmv-view-expanded,.mw-mmv-filepage-buttons .mw-mmv-view-config{display:block}.mw-mmv-filepage-buttons .mw-mmv-view-expanded.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3C%21--%20Created%20with%20Inkscape%20%28http%3A%2F%2Fwww.inkscape.org%2F%29%20--%3E%0A%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20width%3D%22100%25%22%0A%20%20%20height%3D%22100%25%22%0A%20%20%20viewBox%3D%220%200%201024%20768%22%0A%20%20%20id%3D%22Layer_1%22%0A%20%20%20xml%3Aspace%3D%22preserve%22%3E%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata17%22%3E%3Crdf%3ARDF%3E%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%3C%2Fcc%3AWork%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cdefs%0A%20%20%20%20%20id%3D%22defs15%22%20%2F%3E%3Cg%0A%20%20%20%20%20id%3D%22g3%22%3E%3Cpolygon%0A%20%20%20%20%20%20%20points%3D%22851.2%2C71.6%20690.7%2C232.1%20650.6%2C191.8%20641%2C356.6%20805.8%2C347.3%20765.5%2C306.9%20926%2C146.4%20984.5%2C204.9%20997.6%2C0%20792.7%2C13.1%20%22%0A%20%20%20%20%20%20%20id%3D%22polygon5%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3Cpolygon%0A%20%20%20%20%20%20%20points%3D%22769.6%2C89.3%20611.9%2C89.3%20682.8%2C160.1%20690.7%2C167.6%20%22%0A%20%20%20%20%20%20%20id%3D%22polygon7%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3Cpath%0A%20%20%20%20%20%20%20d%3D%22m%20643.6%2C402.2%20-51.2%2C3%203%2C-51.2%209.4%2C-164.4%205.8%2C-100.3%20H%2026.4%20V%20768%20H%20909.5%20V%20387%20l%20-100.9%2C5.8%20-165%2C9.4%20z%20M%20813.9%2C678%20H%20113.6%20l%20207.2%2C-270.2%2031.5%2C-12.9%20195.7%2C204.9%20105.9%2C-63.2%20159.8%2C140.8%200.2%2C0.6%200%2C0%20z%22%0A%20%20%20%20%20%20%20id%3D%22path9%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3Cpolygon%0A%20%20%20%20%20%20%20points%3D%22909.5%2C386.1%20909.5%2C228%20830.4%2C306.9%20838.2%2C314.8%20%22%0A%20%20%20%20%20%20%20id%3D%22polygon11%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);background-image:url(//bits.wikimedia.org/static-1.25wmf17/extensions/MultimediaViewer/resources/mmv/img/expand.svg?2015-02-11T19:31:40Z)!ie}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before{background-image:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3C%21--%20Created%20with%20Inkscape%20%28http%3A%2F%2Fwww.inkscape.org%2F%29%20--%3E%0A%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20width%3D%22100%25%22%0A%20%20%20height%3D%22100%25%22%0A%20%20%20viewBox%3D%220%200%201024%20768%22%0A%20%20%20id%3D%22Layer_1%22%0A%20%20%20xml%3Aspace%3D%22preserve%22%3E%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata9%22%3E%3Crdf%3ARDF%3E%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%3C%2Fcc%3AWork%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cdefs%0A%20%20%20%20%20id%3D%22defs7%22%20%2F%3E%3Cpath%0A%20%20%20%20%20d%3D%22M%20897%2C454.6%20V%20313.4%20L%20810.4%2C299%20c%20-6.4%2C-23.3%20-16%2C-45.7%20-27.3%2C-65.8%20L%20833.6%2C161.8%20734.2%2C61.6%20662.8%2C112.1%20C%20641.9%2C100.9%20620.3%2C91.2%20597%2C84.8%20L%20582.6%2C-1%20H%20441.4%20L%20427%2C85.6%20c%20-23.3%2C6.4%20-45.7%2C16%20-65.8%2C27.3%20L%20289.8%2C62.4%20189.5%2C161.9%20240%2C233.3%20c%20-11.2%2C20.9%20-20.9%2C42.5%20-27.3%2C66.6%20L%20127%2C313.4%20v%20141.2%20l%2085.8%2C14.4%20c%206.4%2C23.3%2016%2C45.7%2027.3%2C66.6%20l%20-50.5%2C71.4%2099.5%2C99.5%2071.4%2C-50.5%20c%2020.9%2C11.2%2042.5%2C20.9%2066.6%2C27.3%20l%2014.4%2C85.8%20h%20141.2%20l%2014.4%2C-86.6%20c%2023.3%2C-6.4%2045.7%2C-16%2065.8%2C-27.3%20l%2071.4%2C50.5%2099.5%2C-99.5%20-50.5%2C-71.4%20c%2011.2%2C-20.9%2020.9%2C-42.5%2027.3%2C-66.6%20L%20897%2C454.6%20z%20m%20-385%2C77%20C%20430.2%2C531.6%20364.4%2C465%20364.4%2C384%20364.4%2C302.2%20431%2C236.4%20512%2C236.4%20c%2081%2C0%20147.6%2C65.8%20147.6%2C147.6%200%2C81.8%20-65.8%2C147.6%20-147.6%2C147.6%20z%22%0A%20%20%20%20%20id%3D%22path3%22%0A%20%20%20%20%20style%3D%22fill%3A%23777777%22%20%2F%3E%3C%2Fsvg%3E);background-image:url(//bits.wikimedia.org/static-1.25wmf17/extensions/MultimediaViewer/resources/mmv/img/gear_gray.svg?2015-02-11T19:31:40Z)!ie;opacity:0.75}.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before:hover{opacity:1}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:044c53002cff088b30c7d665dbf61ad1 */</style><style>
+table.jquery-tablesorter th.headerSort{background-image:url(data:image/gif;base64,R0lGODlhFQAJAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAxODAxMTc0MDcyMDY4MTE4OEM2REYyN0ExMDhBNDJFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdCNTAyODcwMEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdCNTAyODZGMEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDE4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAABACwAAAAAFQAJAAACF4yPgMsJ2mJ4VDKKrd4GVz5lYPeMiVUAADs=);background-image:url(//bits.wikimedia.org/static-1.25wmf17/resources/src/jquery/images/sort_both.gif?2015-02-11T19:30:00Z)!ie;cursor:pointer;background-repeat:no-repeat;background-position:center right;padding-right:21px}table.jquery-tablesorter th.headerSortUp{background-image:url(data:image/gif;base64,R0lGODlhFQAEAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAzODAxMTc0MDcyMDY4MTE4OEM2REYyN0ExMDhBNDJFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdCNTAyODc0MEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdCNTAyODczMEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDM4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDM4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAABACwAAAAAFQAEAAACDYwfoAvoz9qbZ9FrJC0AOw==);background-image:url(//bits.wikimedia.org/static-1.25wmf17/resources/src/jquery/images/sort_up.gif?2015-02-11T19:30:00Z)!ie}table.jquery-tablesorter th.headerSortDown{background-image:url(data:image/gif;base64,R0lGODlhFQAEAIABAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAyODAxMTc0MDcyMDY4MTE4OEM2REYyN0ExMDhBNDJFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhFNzNGQjI3MEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhFNzNGQjI2MEY4NjExRTBBMzkyQzAyM0E1RDk3RDc3IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDI4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDI4MDExNzQwNzIwNjgxMTg4QzZERjI3QTEwOEE0MkUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGgn56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhnZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8uLSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAABACwAAAAAFQAEAAACDYyPAcmtsJyDVDKKWQEAOw==);background-image:url(//bits.wikimedia.org/static-1.25wmf17/resources/src/jquery/images/sort_down.gif?2015-02-11T19:30:00Z)!ie}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:ed3f93a166eb66d2f8f582aa4f3017b5 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&lang=en&modules=site&only=styles&skin=vector&*">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3904d24a08aa08f6a68dc338f9be277e */</style>
+<script src="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/load.php"></script><script src="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/load(1).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_bytecode_instruction_listings","wgTitle":"Java bytecode instruction listings","wgCurRevisionId":647868546,"wgRevisionId":647868546,"wgArticleId":25284049,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Uncategorized from February 2015","All uncategorized pages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_bytecode_instruction_listings","wgRelevantArticleId":25284049,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":4096,"namespacesWithSubpages":{"6":0,"8":0,"1":true,"2":true,"3":true,"4":true,"5":true,"7":true,"9":true,"10":true,"11":true,"12":true,"13":true,"14":true,"15":true,"100":true,"101":true,"102":true,"103":true,"104":true,"105":true,"106":true,"107":true,"108":true,"109":true,"110":true,"111":true,"830":true,"831":true,"447":true,"2600":false,"828":true,"829":true}},"wikilove-recipient":"","wikilove-anon":0,"wgPoweredByHHVM":true,"wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q6165038"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});},{},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});},{},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:94007ea073e20ad4a3cdce36b2f2e369 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.viewPageTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script>
+<link rel="dns-prefetch" href="http://meta.wikimedia.org/">
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.25wmf17/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Java_bytecode_instruction_listings skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><div id="centralNotice"></div><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Java bytecode instruction listings</h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="http://en.wikipedia.org/wiki/Java_bytecode_instruction_listings#mw-head">navigation</a>, 					<a href="http://en.wikipedia.org/wiki/Java_bytecode_instruction_listings#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="hatnote relarticle mainarticle">Main article: <a href="http://en.wikipedia.org/wiki/Java_bytecode" title="Java bytecode">Java bytecode</a></div>
+<p>This is a list of the instructions that make up the <a href="http://en.wikipedia.org/wiki/Java_bytecode" title="Java bytecode">Java bytecode</a>, an abstract machine language that is ultimately executed by the <a href="http://en.wikipedia.org/wiki/Java_virtual_machine" title="Java virtual machine">Java virtual machine</a>. The Java bytecode is generated by language compilers targeting the <a href="http://en.wikipedia.org/wiki/Java_Platform" title="Java Platform" class="mw-redirect">Java Platform</a>, most notably the <a href="http://en.wikipedia.org/wiki/Java_(programming_language)" title="Java (programming language)">Java programming language</a>.</p>
+<table class="wikitable sortable jquery-tablesorter">
+<thead><tr>
+<th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Mnemonic</th>
+<th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Opcode<br>
+<i>(in hexadecimal)</i></th>
+<th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Opcode (in binary)</th>
+<th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Other bytes</th>
+<th scope="col" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Stack<br>
+[before]→[after]</th>
+<th scope="col" class="unsortable">Description</th>
+</tr></thead><tbody>
+<tr>
+<td>aaload</td>
+<td align="center">32</td>
+<td>0011 0010</td>
+<td></td>
+<td>arrayref, index → value</td>
+<td>load onto the stack a reference from an array</td>
+</tr>
+<tr>
+<td>aastore</td>
+<td align="center">53</td>
+<td>0101 0011</td>
+<td></td>
+<td>arrayref, index, value →</td>
+<td>store into a reference in an array</td>
+</tr>
+<tr>
+<td>aconst_null</td>
+<td align="center">01</td>
+<td>0000 0001</td>
+<td></td>
+<td>→ null</td>
+<td>push a <i>null</i> reference onto the stack</td>
+</tr>
+<tr>
+<td>aload</td>
+<td align="center">19</td>
+<td>0001 1001</td>
+<td>1: index</td>
+<td>→ objectref</td>
+<td>load a reference onto the stack from a local variable <i>#index</i></td>
+</tr>
+<tr>
+<td>aload_0</td>
+<td align="center">2a</td>
+<td>0010 1010</td>
+<td></td>
+<td>→ objectref</td>
+<td>load a reference onto the stack from local variable 0</td>
+</tr>
+<tr>
+<td>aload_1</td>
+<td align="center">2b</td>
+<td>0010 1011</td>
+<td></td>
+<td>→ objectref</td>
+<td>load a reference onto the stack from local variable 1</td>
+</tr>
+<tr>
+<td>aload_2</td>
+<td align="center">2c</td>
+<td>0010 1100</td>
+<td></td>
+<td>→ objectref</td>
+<td>load a reference onto the stack from local variable 2</td>
+</tr>
+<tr>
+<td>aload_3</td>
+<td align="center">2d</td>
+<td>0010 1101</td>
+<td></td>
+<td>→ objectref</td>
+<td>load a reference onto the stack from local variable 3</td>
+</tr>
+<tr>
+<td>anewarray</td>
+<td align="center">bd</td>
+<td>1011 1101</td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>count → arrayref</td>
+<td>create a new array of references of length <i>count</i> and component type identified by the class reference <i>index</i> (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>) in the constant pool</td>
+</tr>
+<tr>
+<td>areturn</td>
+<td align="center">b0</td>
+<td>1011 0000</td>
+<td></td>
+<td>objectref → [empty]</td>
+<td>return a reference from a method</td>
+</tr>
+<tr>
+<td>arraylength</td>
+<td align="center">be</td>
+<td>1011 1110</td>
+<td></td>
+<td>arrayref → length</td>
+<td>get the length of an array</td>
+</tr>
+<tr>
+<td>astore</td>
+<td align="center">3a</td>
+<td>0011 1010</td>
+<td>1: index</td>
+<td>objectref →</td>
+<td>store a reference into a local variable <i>#index</i></td>
+</tr>
+<tr>
+<td>astore_0</td>
+<td align="center">4b</td>
+<td>0100 1011</td>
+<td></td>
+<td>objectref →</td>
+<td>store a reference into local variable 0</td>
+</tr>
+<tr>
+<td>astore_1</td>
+<td align="center">4c</td>
+<td>0100 1100</td>
+<td></td>
+<td>objectref →</td>
+<td>store a reference into local variable 1</td>
+</tr>
+<tr>
+<td>astore_2</td>
+<td align="center">4d</td>
+<td>0100 1101</td>
+<td></td>
+<td>objectref →</td>
+<td>store a reference into local variable 2</td>
+</tr>
+<tr>
+<td>astore_3</td>
+<td align="center">4e</td>
+<td>0100 1110</td>
+<td></td>
+<td>objectref →</td>
+<td>store a reference into local variable 3</td>
+</tr>
+<tr>
+<td>athrow</td>
+<td align="center">bf</td>
+<td>1011 1111</td>
+<td></td>
+<td>objectref → [empty], objectref</td>
+<td>throws an error or exception (notice that the rest of the stack is cleared, leaving only a reference to the Throwable)</td>
+</tr>
+<tr>
+<td>baload</td>
+<td align="center">33</td>
+<td>0011 0011</td>
+<td></td>
+<td>arrayref, index → value</td>
+<td>load a byte or Boolean value from an array</td>
+</tr>
+<tr>
+<td>bastore</td>
+<td align="center">54</td>
+<td>0101 0100</td>
+<td></td>
+<td>arrayref, index, value →</td>
+<td>store a byte or Boolean value into an array</td>
+</tr>
+<tr>
+<td>bipush</td>
+<td align="center">10</td>
+<td>0001 0000</td>
+<td>1: byte</td>
+<td>→ value</td>
+<td>push a <i>byte</i> onto the stack as an integer <i>value</i></td>
+</tr>
+<tr>
+<td>breakpoint</td>
+<td align="center">ca</td>
+<td>1100 1010</td>
+<td></td>
+<td></td>
+<td>reserved for breakpoints in Java debuggers; should not appear in any class file</td>
+</tr>
+<tr>
+<td>caload</td>
+<td align="center">34</td>
+<td>0011 0100</td>
+<td></td>
+<td>arrayref, index → value</td>
+<td>load a char from an array</td>
+</tr>
+<tr>
+<td>castore</td>
+<td align="center">55</td>
+<td>0101 0101</td>
+<td></td>
+<td>arrayref, index, value →</td>
+<td>store a char into an array</td>
+</tr>
+<tr>
+<td>checkcast</td>
+<td align="center">c0</td>
+<td>1100 0000</td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>objectref → objectref</td>
+<td>checks whether an <i>objectref</i> is of a certain type, the class reference of which is in the constant pool at <i>index</i> (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>d2f</td>
+<td align="center">90</td>
+<td>1001 0000</td>
+<td></td>
+<td>value → result</td>
+<td>convert a double to a float</td>
+</tr>
+<tr>
+<td>d2i</td>
+<td align="center">8e</td>
+<td>1000 1110</td>
+<td></td>
+<td>value → result</td>
+<td>convert a double to an int</td>
+</tr>
+<tr>
+<td>d2l</td>
+<td align="center">8f</td>
+<td>1000 1111</td>
+<td></td>
+<td>value → result</td>
+<td>convert a double to a long</td>
+</tr>
+<tr>
+<td>dadd</td>
+<td align="center">63</td>
+<td>0110 0011</td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>add two doubles</td>
+</tr>
+<tr>
+<td>daload</td>
+<td align="center">31</td>
+<td>0011 0001</td>
+<td></td>
+<td>arrayref, index → value</td>
+<td>load a double from an array</td>
+</tr>
+<tr>
+<td>dastore</td>
+<td align="center">52</td>
+<td>0101 0010</td>
+<td></td>
+<td>arrayref, index, value →</td>
+<td>store a double into an array</td>
+</tr>
+<tr>
+<td>dcmpg</td>
+<td align="center">98</td>
+<td>1001 1000</td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>compare two doubles</td>
+</tr>
+<tr>
+<td>dcmpl</td>
+<td align="center">97</td>
+<td>1001 0111</td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>compare two doubles</td>
+</tr>
+<tr>
+<td>dconst_0</td>
+<td align="center">0e</td>
+<td>0000 1110</td>
+<td></td>
+<td>→ 0.0</td>
+<td>push the constant <i>0.0</i> onto the stack</td>
+</tr>
+<tr>
+<td>dconst_1</td>
+<td align="center">0f</td>
+<td>0000 1111</td>
+<td></td>
+<td>→ 1.0</td>
+<td>push the constant <i>1.0</i> onto the stack</td>
+</tr>
+<tr>
+<td>ddiv</td>
+<td align="center">6f</td>
+<td>0110 1111</td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>divide two doubles</td>
+</tr>
+<tr>
+<td>dload</td>
+<td align="center">18</td>
+<td>0001 1000</td>
+<td>1: index</td>
+<td>→ value</td>
+<td>load a double <i>value</i> from a local variable <i>#index</i></td>
+</tr>
+<tr>
+<td>dload_0</td>
+<td align="center">26</td>
+<td>0010 0110</td>
+<td></td>
+<td>→ value</td>
+<td>load a double from local variable 0</td>
+</tr>
+<tr>
+<td>dload_1</td>
+<td align="center">27</td>
+<td>0010 0111</td>
+<td></td>
+<td>→ value</td>
+<td>load a double from local variable 1</td>
+</tr>
+<tr>
+<td>dload_2</td>
+<td align="center">28</td>
+<td>0010 1000</td>
+<td></td>
+<td>→ value</td>
+<td>load a double from local variable 2</td>
+</tr>
+<tr>
+<td>dload_3</td>
+<td align="center">29</td>
+<td>0010 1001</td>
+<td></td>
+<td>→ value</td>
+<td>load a double from local variable 3</td>
+</tr>
+<tr>
+<td>dmul</td>
+<td align="center">6b</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>multiply two doubles</td>
+</tr>
+<tr>
+<td>dneg</td>
+<td align="center">77</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>negate a double</td>
+</tr>
+<tr>
+<td>drem</td>
+<td align="center">73</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>get the remainder from a division between two doubles</td>
+</tr>
+<tr>
+<td>dreturn</td>
+<td align="center">af</td>
+<td></td>
+<td></td>
+<td>value → [empty]</td>
+<td>return a double from a method</td>
+</tr>
+<tr>
+<td>dstore</td>
+<td align="center">39</td>
+<td></td>
+<td>1: index</td>
+<td>value →</td>
+<td>store a double <i>value</i> into a local variable <i>#index</i></td>
+</tr>
+<tr>
+<td>dstore_0</td>
+<td align="center">47</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a double into local variable 0</td>
+</tr>
+<tr>
+<td>dstore_1</td>
+<td align="center">48</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a double into local variable 1</td>
+</tr>
+<tr>
+<td>dstore_2</td>
+<td align="center">49</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a double into local variable 2</td>
+</tr>
+<tr>
+<td>dstore_3</td>
+<td align="center">4a</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a double into local variable 3</td>
+</tr>
+<tr>
+<td>dsub</td>
+<td align="center">67</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>subtract a double from another</td>
+</tr>
+<tr>
+<td>dup</td>
+<td align="center">59</td>
+<td></td>
+<td></td>
+<td>value → value, value</td>
+<td>duplicate the value on top of the stack</td>
+</tr>
+<tr>
+<td>dup_x1</td>
+<td align="center">5a</td>
+<td></td>
+<td></td>
+<td>value2, value1 → value1, value2, value1</td>
+<td>insert a copy of the top value into the stack two values from the top. value1 and value2 must not be of the type double or long.</td>
+</tr>
+<tr>
+<td>dup_x2</td>
+<td align="center">5b</td>
+<td></td>
+<td></td>
+<td>value3, value2, value1 → value1, value3, value2, value1</td>
+<td>insert a copy of the top value into the stack two (if value2 is double or long it takes up the entry of value3, too) or three values (if value2 is neither double nor long) from the top</td>
+</tr>
+<tr>
+<td>dup2</td>
+<td align="center">5c</td>
+<td></td>
+<td></td>
+<td>{value2, value1} → {value2, value1}, {value2, value1}</td>
+<td>duplicate top two stack words (two values, if value1 is not double nor long; a single value, if value1 is double or long)</td>
+</tr>
+<tr>
+<td>dup2_x1</td>
+<td align="center">5d</td>
+<td></td>
+<td></td>
+<td>value3, {value2, value1} → {value2, value1}, value3, {value2, value1}</td>
+<td>duplicate two words and insert beneath third word (see explanation above)</td>
+</tr>
+<tr>
+<td>dup2_x2</td>
+<td align="center">5e</td>
+<td></td>
+<td></td>
+<td>{value4, value3}, {value2, value1} → {value2, value1}, {value4, value3}, {value2, value1}</td>
+<td>duplicate two words and insert beneath fourth word</td>
+</tr>
+<tr>
+<td>f2d</td>
+<td align="center">8d</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert a float to a double</td>
+</tr>
+<tr>
+<td>f2i</td>
+<td align="center">8b</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert a float to an int</td>
+</tr>
+<tr>
+<td>f2l</td>
+<td align="center">8c</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert a float to a long</td>
+</tr>
+<tr>
+<td>fadd</td>
+<td align="center">62</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>add two floats</td>
+</tr>
+<tr>
+<td>faload</td>
+<td align="center">30</td>
+<td></td>
+<td></td>
+<td>arrayref, index → value</td>
+<td>load a float from an array</td>
+</tr>
+<tr>
+<td>fastore</td>
+<td align="center">51</td>
+<td></td>
+<td></td>
+<td>arrayref, index, value →</td>
+<td>store a float in an array</td>
+</tr>
+<tr>
+<td>fcmpg</td>
+<td align="center">96</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>compare two floats</td>
+</tr>
+<tr>
+<td>fcmpl</td>
+<td align="center">95</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>compare two floats</td>
+</tr>
+<tr>
+<td>fconst_0</td>
+<td align="center">0b</td>
+<td></td>
+<td></td>
+<td>→ 0.0f</td>
+<td>push <i>0.0f</i> on the stack</td>
+</tr>
+<tr>
+<td>fconst_1</td>
+<td align="center">0c</td>
+<td></td>
+<td></td>
+<td>→ 1.0f</td>
+<td>push <i>1.0f</i> on the stack</td>
+</tr>
+<tr>
+<td>fconst_2</td>
+<td align="center">0d</td>
+<td></td>
+<td></td>
+<td>→ 2.0f</td>
+<td>push <i>2.0f</i> on the stack</td>
+</tr>
+<tr>
+<td>fdiv</td>
+<td align="center">6e</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>divide two floats</td>
+</tr>
+<tr>
+<td>fload</td>
+<td align="center">17</td>
+<td></td>
+<td>1: index</td>
+<td>→ value</td>
+<td>load a float <i>value</i> from a local variable <i>#index</i></td>
+</tr>
+<tr>
+<td>fload_0</td>
+<td align="center">22</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load a float <i>value</i> from local variable 0</td>
+</tr>
+<tr>
+<td>fload_1</td>
+<td align="center">23</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load a float <i>value</i> from local variable 1</td>
+</tr>
+<tr>
+<td>fload_2</td>
+<td align="center">24</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load a float <i>value</i> from local variable 2</td>
+</tr>
+<tr>
+<td>fload_3</td>
+<td align="center">25</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load a float <i>value</i> from local variable 3</td>
+</tr>
+<tr>
+<td>fmul</td>
+<td align="center">6a</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>multiply two floats</td>
+</tr>
+<tr>
+<td>fneg</td>
+<td align="center">76</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>negate a float</td>
+</tr>
+<tr>
+<td>frem</td>
+<td align="center">72</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>get the remainder from a division between two floats</td>
+</tr>
+<tr>
+<td>freturn</td>
+<td align="center">ae</td>
+<td></td>
+<td></td>
+<td>value → [empty]</td>
+<td>return a float</td>
+</tr>
+<tr>
+<td>fstore</td>
+<td align="center">38</td>
+<td></td>
+<td>1: index</td>
+<td>value →</td>
+<td>store a float <i>value</i> into a local variable <i>#index</i></td>
+</tr>
+<tr>
+<td>fstore_0</td>
+<td align="center">43</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a float <i>value</i> into local variable 0</td>
+</tr>
+<tr>
+<td>fstore_1</td>
+<td align="center">44</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a float <i>value</i> into local variable 1</td>
+</tr>
+<tr>
+<td>fstore_2</td>
+<td align="center">45</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a float <i>value</i> into local variable 2</td>
+</tr>
+<tr>
+<td>fstore_3</td>
+<td align="center">46</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a float <i>value</i> into local variable 3</td>
+</tr>
+<tr>
+<td>fsub</td>
+<td align="center">66</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>subtract two floats</td>
+</tr>
+<tr>
+<td>getfield</td>
+<td align="center">b4</td>
+<td></td>
+<td>2: index1, index2</td>
+<td>objectref → value</td>
+<td>get a field <i>value</i> of an object <i>objectref</i>, where the field is identified by field reference in the constant pool <i>index</i> (<i>index1 &lt;&lt; 8 + index2</i>)</td>
+</tr>
+<tr>
+<td>getstatic</td>
+<td align="center">b2</td>
+<td></td>
+<td>2: index1, index2</td>
+<td>→ value</td>
+<td>get a static field <i>value</i> of a class, where the field is identified by field reference in the constant pool <i>index</i> (<i>index1 &lt;&lt; 8 + index2</i>)</td>
+</tr>
+<tr>
+<td>goto</td>
+<td align="center">a7</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>[no change]</td>
+<td>goes to another instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>goto_w</td>
+<td align="center">c8</td>
+<td></td>
+<td>4: branchbyte1, branchbyte2, branchbyte3, branchbyte4</td>
+<td>[no change]</td>
+<td>goes to another instruction at <i>branchoffset</i> (signed int constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 24 +</i> branchbyte2 &lt;&lt; 16 + <i>branchbyte3 &lt;&lt; 8 + branchbyte4</i>)</td>
+</tr>
+<tr>
+<td>i2b</td>
+<td align="center">91</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert an int into a byte</td>
+</tr>
+<tr>
+<td>i2c</td>
+<td align="center">92</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert an int into a character</td>
+</tr>
+<tr>
+<td>i2d</td>
+<td align="center">87</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert an int into a double</td>
+</tr>
+<tr>
+<td>i2f</td>
+<td align="center">86</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert an int into a float</td>
+</tr>
+<tr>
+<td>i2l</td>
+<td align="center">85</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert an int into a long</td>
+</tr>
+<tr>
+<td>i2s</td>
+<td align="center">93</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert an int into a short</td>
+</tr>
+<tr>
+<td>iadd</td>
+<td align="center">60</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>add two ints</td>
+</tr>
+<tr>
+<td>iaload</td>
+<td align="center">2e</td>
+<td></td>
+<td></td>
+<td>arrayref, index → value</td>
+<td>load an int from an array</td>
+</tr>
+<tr>
+<td>iand</td>
+<td align="center">7e</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>perform a bitwise and on two integers</td>
+</tr>
+<tr>
+<td>iastore</td>
+<td align="center">4f</td>
+<td></td>
+<td></td>
+<td>arrayref, index, value →</td>
+<td>store an int into an array</td>
+</tr>
+<tr>
+<td>iconst_m1</td>
+<td align="center">02</td>
+<td></td>
+<td></td>
+<td>→ -1</td>
+<td>load the int value -1 onto the stack</td>
+</tr>
+<tr>
+<td>iconst_0</td>
+<td align="center">03</td>
+<td></td>
+<td></td>
+<td>→ 0</td>
+<td>load the int value 0 onto the stack</td>
+</tr>
+<tr>
+<td>iconst_1</td>
+<td align="center">04</td>
+<td></td>
+<td></td>
+<td>→ 1</td>
+<td>load the int value 1 onto the stack</td>
+</tr>
+<tr>
+<td>iconst_2</td>
+<td align="center">05</td>
+<td></td>
+<td></td>
+<td>→ 2</td>
+<td>load the int value 2 onto the stack</td>
+</tr>
+<tr>
+<td>iconst_3</td>
+<td align="center">06</td>
+<td></td>
+<td></td>
+<td>→ 3</td>
+<td>load the int value 3 onto the stack</td>
+</tr>
+<tr>
+<td>iconst_4</td>
+<td align="center">07</td>
+<td></td>
+<td></td>
+<td>→ 4</td>
+<td>load the int value 4 onto the stack</td>
+</tr>
+<tr>
+<td>iconst_5</td>
+<td align="center">08</td>
+<td></td>
+<td></td>
+<td>→ 5</td>
+<td>load the int value 5 onto the stack</td>
+</tr>
+<tr>
+<td>idiv</td>
+<td align="center">6c</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>divide two integers</td>
+</tr>
+<tr>
+<td>if_acmpeq</td>
+<td align="center">a5</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value1, value2 →</td>
+<td>if references are equal, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>if_acmpne</td>
+<td align="center">a6</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value1, value2 →</td>
+<td>if references are not equal, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>if_icmpeq</td>
+<td align="center">9f</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value1, value2 →</td>
+<td>if ints are equal, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>if_icmpge</td>
+<td align="center">a2</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value1, value2 →</td>
+<td>if <i>value1</i> is greater than or equal to <i>value2</i>, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>if_icmpgt</td>
+<td align="center">a3</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value1, value2 →</td>
+<td>if <i>value1</i> is greater than <i>value2</i>, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>if_icmple</td>
+<td align="center">a4</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value1, value2 →</td>
+<td>if <i>value1</i> is less than or equal to <i>value2</i>, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>if_icmplt</td>
+<td align="center">a1</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value1, value2 →</td>
+<td>if <i>value1</i> is less than <i>value2</i>, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>if_icmpne</td>
+<td align="center">a0</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value1, value2 →</td>
+<td>if ints are not equal, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>ifeq</td>
+<td align="center">99</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value →</td>
+<td>if <i>value</i> is 0, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>ifge</td>
+<td align="center">9c</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value →</td>
+<td>if <i>value</i> is greater than or equal to 0, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>ifgt</td>
+<td align="center">9d</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value →</td>
+<td>if <i>value</i> is greater than 0, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>ifle</td>
+<td align="center">9e</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value →</td>
+<td>if <i>value</i> is less than or equal to 0, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>iflt</td>
+<td align="center">9b</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value →</td>
+<td>if <i>value</i> is less than 0, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>ifne</td>
+<td align="center">9a</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value →</td>
+<td>if <i>value</i> is not 0, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>ifnonnull</td>
+<td align="center">c7</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value →</td>
+<td>if <i>value</i> is not null, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>ifnull</td>
+<td align="center">c6</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>value →</td>
+<td>if <i>value</i> is null, branch to instruction at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>)</td>
+</tr>
+<tr>
+<td>iinc</td>
+<td align="center">84</td>
+<td></td>
+<td>2: index, const</td>
+<td>[No change]</td>
+<td>increment local variable <i>#index</i> by signed byte <i>const</i></td>
+</tr>
+<tr>
+<td>iload</td>
+<td align="center">15</td>
+<td></td>
+<td>1: index</td>
+<td>→ value</td>
+<td>load an int <i>value</i> from a local variable <i>#index</i></td>
+</tr>
+<tr>
+<td>iload_0</td>
+<td align="center">1a</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load an int <i>value</i> from local variable 0</td>
+</tr>
+<tr>
+<td>iload_1</td>
+<td align="center">1b</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load an int <i>value</i> from local variable 1</td>
+</tr>
+<tr>
+<td>iload_2</td>
+<td align="center">1c</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load an int <i>value</i> from local variable 2</td>
+</tr>
+<tr>
+<td>iload_3</td>
+<td align="center">1d</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load an int <i>value</i> from local variable 3</td>
+</tr>
+<tr>
+<td>impdep1</td>
+<td align="center">fe</td>
+<td></td>
+<td></td>
+<td></td>
+<td>reserved for implementation-dependent operations within debuggers; should not appear in any class file</td>
+</tr>
+<tr>
+<td>impdep2</td>
+<td align="center">ff</td>
+<td></td>
+<td></td>
+<td></td>
+<td>reserved for implementation-dependent operations within debuggers; should not appear in any class file</td>
+</tr>
+<tr>
+<td>imul</td>
+<td align="center">68</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>multiply two integers</td>
+</tr>
+<tr>
+<td>ineg</td>
+<td align="center">74</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>negate int</td>
+</tr>
+<tr>
+<td>instanceof</td>
+<td align="center">c1</td>
+<td></td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>objectref → result</td>
+<td>determines if an object <i>objectref</i> is of a given type, identified by class reference <i>index</i> in constant pool (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>invokedynamic</td>
+<td align="center">ba</td>
+<td></td>
+<td>4: indexbyte1, indexbyte2, 0, 0</td>
+<td>[arg1, [arg2 ...]] →</td>
+<td>invokes a dynamic method identified by method reference <i>index</i> in constant pool (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>invokeinterface</td>
+<td align="center">b9</td>
+<td></td>
+<td>4: indexbyte1, indexbyte2, count, 0</td>
+<td>objectref, [arg1, arg2, ...] →</td>
+<td>invokes an interface method on object <i>objectref</i>, where the interface method is identified by method reference <i>index</i> in constant pool (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>invokespecial</td>
+<td align="center">b7</td>
+<td></td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>objectref, [arg1, arg2, ...] →</td>
+<td>invoke instance method on object <i>objectref</i>, where the method is identified by method reference <i>index</i> in constant pool (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>invokestatic</td>
+<td align="center">b8</td>
+<td></td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>[arg1, arg2, ...] →</td>
+<td>invoke a static method, where the method is identified by method reference <i>index</i> in constant pool (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>invokevirtual</td>
+<td align="center">b6</td>
+<td></td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>objectref, [arg1, arg2, ...] →</td>
+<td>invoke virtual method on object <i>objectref</i>, where the method is identified by method reference <i>index</i> in constant pool (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>ior</td>
+<td align="center">80</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>bitwise int or</td>
+</tr>
+<tr>
+<td>irem</td>
+<td align="center">70</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>logical int remainder</td>
+</tr>
+<tr>
+<td>ireturn</td>
+<td align="center">ac</td>
+<td></td>
+<td></td>
+<td>value → [empty]</td>
+<td>return an integer from a method</td>
+</tr>
+<tr>
+<td>ishl</td>
+<td align="center">78</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>int shift left</td>
+</tr>
+<tr>
+<td>ishr</td>
+<td align="center">7a</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>int arithmetic shift right</td>
+</tr>
+<tr>
+<td>istore</td>
+<td align="center">36</td>
+<td></td>
+<td>1: index</td>
+<td>value →</td>
+<td>store int <i>value</i> into variable <i>#index</i></td>
+</tr>
+<tr>
+<td>istore_0</td>
+<td align="center">3b</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store int <i>value</i> into variable 0</td>
+</tr>
+<tr>
+<td>istore_1</td>
+<td align="center">3c</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store int <i>value</i> into variable 1</td>
+</tr>
+<tr>
+<td>istore_2</td>
+<td align="center">3d</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store int <i>value</i> into variable 2</td>
+</tr>
+<tr>
+<td>istore_3</td>
+<td align="center">3e</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store int <i>value</i> into variable 3</td>
+</tr>
+<tr>
+<td>isub</td>
+<td align="center">64</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>int subtract</td>
+</tr>
+<tr>
+<td>iushr</td>
+<td align="center">7c</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>int logical shift right</td>
+</tr>
+<tr>
+<td>ixor</td>
+<td align="center">82</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>int xor</td>
+</tr>
+<tr>
+<td>jsr</td>
+<td align="center">a8</td>
+<td></td>
+<td>2: branchbyte1, branchbyte2</td>
+<td>→ address</td>
+<td>jump to subroutine at <i>branchoffset</i> (signed short constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 8 + branchbyte2</i>) and place the return address on the stack</td>
+</tr>
+<tr>
+<td>jsr_w</td>
+<td align="center">c9</td>
+<td></td>
+<td>4: branchbyte1, branchbyte2, branchbyte3, branchbyte4</td>
+<td>→ address</td>
+<td>jump to subroutine at <i>branchoffset</i> (signed int constructed from unsigned bytes <i>branchbyte1 &lt;&lt; 24 + branchbyte2 &lt;&lt; 16 + branchbyte3 &lt;&lt; 8 + branchbyte4</i>) and place the return address on the stack</td>
+</tr>
+<tr>
+<td>l2d</td>
+<td align="center">8a</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert a long to a double</td>
+</tr>
+<tr>
+<td>l2f</td>
+<td align="center">89</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert a long to a float</td>
+</tr>
+<tr>
+<td>l2i</td>
+<td align="center">88</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>convert a long to a int</td>
+</tr>
+<tr>
+<td>ladd</td>
+<td align="center">61</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>add two longs</td>
+</tr>
+<tr>
+<td>laload</td>
+<td align="center">2f</td>
+<td></td>
+<td></td>
+<td>arrayref, index → value</td>
+<td>load a long from an array</td>
+</tr>
+<tr>
+<td>land</td>
+<td align="center">7f</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>bitwise and of two longs</td>
+</tr>
+<tr>
+<td>lastore</td>
+<td align="center">50</td>
+<td></td>
+<td></td>
+<td>arrayref, index, value →</td>
+<td>store a long to an array</td>
+</tr>
+<tr>
+<td>lcmp</td>
+<td align="center">94</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>compare two longs values</td>
+</tr>
+<tr>
+<td>lconst_0</td>
+<td align="center">09</td>
+<td></td>
+<td></td>
+<td>→ 0L</td>
+<td>push the long 0 onto the stack</td>
+</tr>
+<tr>
+<td>lconst_1</td>
+<td align="center">0a</td>
+<td></td>
+<td></td>
+<td>→ 1L</td>
+<td>push the long 1 onto the stack</td>
+</tr>
+<tr>
+<td>ldc</td>
+<td align="center">12</td>
+<td></td>
+<td>1: index</td>
+<td>→ value</td>
+<td>push a constant <i>#index</i> from a constant pool (String, int or float) onto the stack</td>
+</tr>
+<tr>
+<td>ldc_w</td>
+<td align="center">13</td>
+<td></td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>→ value</td>
+<td>push a constant <i>#index</i> from a constant pool (String, int or float) onto the stack (wide <i>index</i> is constructed as <i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>ldc2_w</td>
+<td align="center">14</td>
+<td></td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>→ value</td>
+<td>push a constant <i>#index</i> from a constant pool (double or long) onto the stack (wide <i>index</i> is constructed as <i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>ldiv</td>
+<td align="center">6d</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>divide two longs</td>
+</tr>
+<tr>
+<td>lload</td>
+<td align="center">16</td>
+<td></td>
+<td>1: index</td>
+<td>→ value</td>
+<td>load a long value from a local variable <i>#index</i></td>
+</tr>
+<tr>
+<td>lload_0</td>
+<td align="center">1e</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load a long value from a local variable 0</td>
+</tr>
+<tr>
+<td>lload_1</td>
+<td align="center">1f</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load a long value from a local variable 1</td>
+</tr>
+<tr>
+<td>lload_2</td>
+<td align="center">20</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load a long value from a local variable 2</td>
+</tr>
+<tr>
+<td>lload_3</td>
+<td align="center">21</td>
+<td></td>
+<td></td>
+<td>→ value</td>
+<td>load a long value from a local variable 3</td>
+</tr>
+<tr>
+<td>lmul</td>
+<td align="center">69</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>multiply two longs</td>
+</tr>
+<tr>
+<td>lneg</td>
+<td align="center">75</td>
+<td></td>
+<td></td>
+<td>value → result</td>
+<td>negate a long</td>
+</tr>
+<tr>
+<td>lookupswitch</td>
+<td align="center">ab</td>
+<td></td>
+<td>4+: &lt;0-3 bytes padding&gt;, defaultbyte1, defaultbyte2, defaultbyte3, defaultbyte4, npairs1, npairs2, npairs3, npairs4, match-offset pairs...</td>
+<td>key →</td>
+<td>a target address is looked up from a table using a key and execution continues from the instruction at that address</td>
+</tr>
+<tr>
+<td>lor</td>
+<td align="center">81</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>bitwise or of two longs</td>
+</tr>
+<tr>
+<td>lrem</td>
+<td align="center">71</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>remainder of division of two longs</td>
+</tr>
+<tr>
+<td>lreturn</td>
+<td align="center">ad</td>
+<td></td>
+<td></td>
+<td>value → [empty]</td>
+<td>return a long value</td>
+</tr>
+<tr>
+<td>lshl</td>
+<td align="center">79</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>bitwise shift left of a long <i>value1</i> by int <i>value2</i> positions</td>
+</tr>
+<tr>
+<td>lshr</td>
+<td align="center">7b</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>bitwise shift right of a long <i>value1</i> by int <i>value2</i> positions</td>
+</tr>
+<tr>
+<td>lstore</td>
+<td align="center">37</td>
+<td></td>
+<td>1: index</td>
+<td>value →</td>
+<td>store a long <i>value</i> in a local variable <i>#index</i></td>
+</tr>
+<tr>
+<td>lstore_0</td>
+<td align="center">3f</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a long <i>value</i> in a local variable 0</td>
+</tr>
+<tr>
+<td>lstore_1</td>
+<td align="center">40</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a long <i>value</i> in a local variable 1</td>
+</tr>
+<tr>
+<td>lstore_2</td>
+<td align="center">41</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a long <i>value</i> in a local variable 2</td>
+</tr>
+<tr>
+<td>lstore_3</td>
+<td align="center">42</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>store a long <i>value</i> in a local variable 3</td>
+</tr>
+<tr>
+<td>lsub</td>
+<td align="center">65</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>subtract two longs</td>
+</tr>
+<tr>
+<td>lushr</td>
+<td align="center">7d</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>bitwise shift right of a long <i>value1</i> by int <i>value2</i> positions, unsigned</td>
+</tr>
+<tr>
+<td>lxor</td>
+<td align="center">83</td>
+<td></td>
+<td></td>
+<td>value1, value2 → result</td>
+<td>bitwise exclusive or of two longs</td>
+</tr>
+<tr>
+<td>monitorenter</td>
+<td align="center">c2</td>
+<td></td>
+<td></td>
+<td>objectref →</td>
+<td>enter monitor for object ("grab the lock" - start of synchronized() section)</td>
+</tr>
+<tr>
+<td>monitorexit</td>
+<td align="center">c3</td>
+<td></td>
+<td></td>
+<td>objectref →</td>
+<td>exit monitor for object ("release the lock" - end of synchronized() section)</td>
+</tr>
+<tr>
+<td>multianewarray</td>
+<td align="center">c5</td>
+<td></td>
+<td>3: indexbyte1, indexbyte2, dimensions</td>
+<td>count1, [count2,...] → arrayref</td>
+<td>create a new array of <i>dimensions</i> dimensions with elements of type identified by class reference in constant pool <i>index</i> (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>); the sizes of each dimension is identified by <i>count1</i>, [<i>count2</i>, etc.]</td>
+</tr>
+<tr>
+<td>new</td>
+<td align="center">bb</td>
+<td></td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>→ objectref</td>
+<td>create new object of type identified by class reference in constant pool <i>index</i> (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>newarray</td>
+<td align="center">bc</td>
+<td></td>
+<td>1: atype</td>
+<td>count → arrayref</td>
+<td>create new array with <i>count</i> elements of primitive type identified by <i>atype</i></td>
+</tr>
+<tr>
+<td>nop</td>
+<td align="center">00</td>
+<td></td>
+<td></td>
+<td>[No change]</td>
+<td>perform no operation</td>
+</tr>
+<tr>
+<td>pop</td>
+<td align="center">57</td>
+<td></td>
+<td></td>
+<td>value →</td>
+<td>discard the top value on the stack</td>
+</tr>
+<tr>
+<td>pop2</td>
+<td align="center">58</td>
+<td></td>
+<td></td>
+<td>{value2, value1} →</td>
+<td>discard the top two values on the stack (or one value, if it is a double or long)</td>
+</tr>
+<tr>
+<td>putfield</td>
+<td align="center">b5</td>
+<td></td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>objectref, value →</td>
+<td>set field to <i>value</i> in an object <i>objectref</i>, where the field is identified by a field reference <i>index</i> in constant pool (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>putstatic</td>
+<td align="center">b3</td>
+<td></td>
+<td>2: indexbyte1, indexbyte2</td>
+<td>value →</td>
+<td>set static field to <i>value</i> in a class, where the field is identified by a field reference <i>index</i> in constant pool (<i>indexbyte1 &lt;&lt; 8 + indexbyte2</i>)</td>
+</tr>
+<tr>
+<td>ret</td>
+<td align="center">a9</td>
+<td></td>
+<td>1: index</td>
+<td>[No change]</td>
+<td>continue execution from address taken from a local variable <i>#index</i> (the asymmetry with jsr is intentional)</td>
+</tr>
+<tr>
+<td>return</td>
+<td align="center">b1</td>
+<td></td>
+<td></td>
+<td>→ [empty]</td>
+<td>return void from method</td>
+</tr>
+<tr>
+<td>saload</td>
+<td align="center">35</td>
+<td></td>
+<td></td>
+<td>arrayref, index → value</td>
+<td>load short from array</td>
+</tr>
+<tr>
+<td>sastore</td>
+<td align="center">56</td>
+<td></td>
+<td></td>
+<td>arrayref, index, value →</td>
+<td>store short to array</td>
+</tr>
+<tr>
+<td>sipush</td>
+<td align="center">11</td>
+<td></td>
+<td>2: byte1, byte2</td>
+<td>→ value</td>
+<td>push a short onto the stack</td>
+</tr>
+<tr>
+<td>swap</td>
+<td align="center">5f</td>
+<td></td>
+<td></td>
+<td>value2, value1 → value1, value2</td>
+<td>swaps two top words on the stack (note that value1 and value2 must not be double or long)</td>
+</tr>
+<tr>
+<td>tableswitch</td>
+<td align="center">aa</td>
+<td></td>
+<td>4+: [0-3 bytes padding], defaultbyte1, defaultbyte2, defaultbyte3, defaultbyte4, lowbyte1, lowbyte2, lowbyte3, lowbyte4, highbyte1, highbyte2, highbyte3, highbyte4, jump offsets...</td>
+<td>index →</td>
+<td>continue execution from an address in the table at offset <i>index</i></td>
+</tr>
+<tr>
+<td>wide</td>
+<td align="center">c4</td>
+<td></td>
+<td>3/5: opcode, indexbyte1, indexbyte2<br>
+or<br>
+iinc, indexbyte1, indexbyte2, countbyte1, countbyte2</td>
+<td>[same as for corresponding instructions]</td>
+<td>execute <i>opcode</i>, where <i>opcode</i> is either iload, fload, aload, lload, dload, istore, fstore, astore, lstore, dstore, or ret, but assume the <i>index</i> is 16 bit; or execute iinc, where the <i>index</i> is 16 bits and the constant to increment by is a signed 16 bit short</td>
+</tr>
+<tr>
+<td><i>(no name)</i></td>
+<td align="center">cb-fd</td>
+<td></td>
+<td></td>
+<td></td>
+<td>these values are currently unassigned for opcodes and are reserved for future use</td>
+</tr>
+</tbody><tfoot></tfoot></table>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&action=edit&section=1" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Java_bytecode" title="Java bytecode">Java bytecode</a>, a general description of Java bytecode within the context of the <a href="http://en.wikipedia.org/wiki/JVM" title="JVM" class="mw-redirect">JVM</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Jazelle" title="Jazelle">Jazelle</a> DBX (Direct Bytecode eXecution), a feature that executes some Java bytecodes in hardware, on some <a href="http://en.wikipedia.org/wiki/ARM9" title="ARM9">ARM9</a> CPUs</li>
+<li><a href="http://en.wikipedia.org/wiki/Common_Intermediate_Language" title="Common Intermediate Language">Common Intermediate Language</a> (CIL), a similar bytecode specification that runs on the <a href="http://en.wikipedia.org/wiki/Common_Language_Runtime" title="Common Language Runtime">CLR</a> of the <a href="http://en.wikipedia.org/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a>.</li>
+<li><a href="http://en.wikipedia.org/wiki/C_to_Java_Virtual_Machine_compilers" title="C to Java Virtual Machine compilers" class="mw-redirect">C to Java Virtual Machine compilers</a></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&action=edit&section=2" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/specs/jvms/se7/html/index.html">Oracle's Java Virtual Machine Specification</a></li>
+<li><a rel="nofollow" class="external text" href="http://homepages.inf.ed.ac.uk/kwxm/JVM/codeByFn.html">List of Opcodes grouped by Function</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tbody><tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit" id="collapsibleTable0">
+<tbody><tr>
+<th scope="col" class="navbox-title" colspan="3"><span class="collapseButton">[<a id="collapseButton0" href="http://en.wikipedia.org/wiki/Java_bytecode_instruction_listings#">hide</a>]</span>
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="http://en.wikipedia.org/wiki/Template:Java_(software_platform)" title="Template:Java (software platform)"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.wikipedia.org/wiki/Template_talk:Java_(software_platform)" title="Template talk:Java (software platform)"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Java_(software_platform)&action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div style="font-size:110%"><a href="http://en.wikipedia.org/wiki/Java_(software_platform)" title="Java (software platform)">Java</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Java platforms</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Java_(programming_language)" title="Java (programming language)">Java language</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_virtual_machine" title="Java virtual machine">JVM</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition" title="Java Platform, Micro Edition">Micro Edition</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition" title="Java Platform, Standard Edition">Standard Edition</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition" title="Java Platform, Enterprise Edition">Enterprise Edition</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_Card" title="Java Card">Java Card</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Android_SDK" title="Android SDK" class="mw-redirect">Android SDK</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="13" style="width:0%;padding:0px 0px 0px 2px">
+<div><a href="http://en.wikipedia.org/wiki/File:Wave.svg" class="image"><img alt="Wave.svg" src="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/75px-Wave.svg.png" width="75" height="135" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wave.svg/113px-Wave.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/40/Wave.svg/150px-Wave.svg.png 2x" data-file-width="226" data-file-height="407"></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Oracle technologies</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Squawk_virtual_machine" title="Squawk virtual machine">Squawk</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_Development_Kit" title="Java Development Kit">Java Development Kit</a></li>
+<li><a href="http://en.wikipedia.org/wiki/OpenJDK" title="OpenJDK">OpenJDK</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_virtual_machine" title="Java virtual machine">Java virtual machine</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JavaFX" title="JavaFX">JavaFX</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Maxine_Virtual_Machine" title="Maxine Virtual Machine">Maxine VM</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Platform technologies</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Java_applet" title="Java applet">Applets</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_Servlet" title="Java Servlet" class="mw-redirect">Servlets</a></li>
+<li><a href="http://en.wikipedia.org/wiki/MIDlet" title="MIDlet">MIDlets</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JavaServer_Pages" title="JavaServer Pages">JSP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_Web_Start" title="Java Web Start">Web Start (JNLP)</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Major third-party technologies</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/JRockit" title="JRockit">JRockit</a></li>
+<li><a href="http://en.wikipedia.org/wiki/GNU_Classpath" title="GNU Classpath">GNU Classpath</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Kaffe" title="Kaffe">Kaffe</a></li>
+<li><a href="http://en.wikipedia.org/wiki/TopLink" title="TopLink">TopLink</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Apache_Harmony" title="Apache Harmony">Apache Harmony</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Apache_Struts" title="Apache Struts">Apache Struts</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Spring_framework" title="Spring framework" class="mw-redirect">Spring framework</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Hibernate_(Java)" title="Hibernate (Java)">Hibernate</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JBoss_application_server" title="JBoss application server" class="mw-redirect">JBoss application server</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Tapestry_(programming)" title="Tapestry (programming)" class="mw-redirect">Tapestry</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Jazelle" title="Jazelle">Jazelle</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">History</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Java_version_history" title="Java version history">Java version history</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_Community_Process" title="Java Community Process">Java Community Process</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Free_Java_implementations" title="Free Java implementations">Free Java implementations</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Major programming languages</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/BeanShell" title="BeanShell">BeanShell</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Clojure" title="Clojure">Clojure</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Groovy_(programming_language)" title="Groovy (programming language)">Groovy</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Oxygene_(programming_language)" title="Oxygene (programming language)">Oxygene</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_Tcl" title="Java Tcl" class="mw-redirect">Java Tcl</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JRuby" title="JRuby">JRuby</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Jython" title="Jython">Jython</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Processing_(programming_language)" title="Processing (programming language)">Processing</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)" title="Rhino (JavaScript engine)">Rhino</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></li>
+<li><a href="http://en.wikipedia.org/wiki/List_of_JVM_languages" title="List of JVM languages">more…</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Java conferences</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/JavaOne" title="JavaOne">JavaOne</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table class="metadata plainlinks ambox ambox-style ambox-uncategorized" role="presentation">
+<tbody><tr>
+<td class="mbox-image">
+<div style="width:52px"><a href="http://en.wikipedia.org/wiki/File:Wiki_letter_w.svg" class="image"><img alt="Wiki letter w.svg" src="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/40px-Wiki_letter_w.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/60px-Wiki_letter_w.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/80px-Wiki_letter_w.svg.png 2x" data-file-width="44" data-file-height="44"></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>has not been added to any <a href="http://en.wikipedia.org/wiki/Wikipedia:Categorization" title="Wikipedia:Categorization">categories</a></b>. Please help out by <a href="http://en.wikipedia.org/wiki/Wikipedia:Categorization_FAQ#How_do_I_add_an_article_to_a_category.3F" title="Wikipedia:Categorization FAQ" class="mw-redirect">adding categories</a> to it so that it can be listed with similar articles. <small><i>(February 2015)</i></small></span></td>
+</tr>
+</tbody></table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1083
+CPU time usage: 0.247 seconds
+Real time usage: 0.301 seconds
+Preprocessor visited node count: 279/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 16681/2097152 bytes
+Template argument size: 214/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 1/500
+Lua time usage: 0.053/10.000 seconds
+Lua memory usage: 1.41 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  131.925      1 - -total
+ 58.62%   77.336      1 - Template:Uncategorized
+ 42.78%   56.438      1 - Template:Mbox
+ 23.61%   31.144      1 - Template:Main
+ 20.23%   26.684      4 - Template:Pagetype
+ 17.37%   22.916      1 - Template:Java_(Sun)
+ 13.36%   17.629      1 - Template:Navbox
+ 10.66%   14.068      1 - Template:DMCFACT
+  9.00%   11.875      1 - Template:Dated_maintenance_category
+  5.95%    7.844      1 - Template:FULLROOTPAGENAME
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:25284049-0!*!0!!*!4!* and timestamp 20150219122739 and revision id 647868546
+ -->
+<noscript>&lt;img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /&gt;</noscript></div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&oldid=647868546">http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&amp;oldid=647868546</a>"					</div>
+													<div id="catlinks" class="catlinks catlinks-allhidden"><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="http://en.wikipedia.org/wiki/Category:Uncategorized_from_February_2015" title="Category:Uncategorized from February 2015">Uncategorized from February 2015</a></li><li><a href="http://en.wikipedia.org/wiki/Category:All_uncategorized_pages" title="Category:All uncategorized pages">All uncategorized pages</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Java+bytecode+instruction+listings&type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Java+bytecode+instruction+listings" title="You&#39;re encouraged to log in; however, it&#39;s not mandatory. [ctrl-option-o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li id="ca-nstab-main" class="selected"><span><a href="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/Java bytecode instruction listings - Wikipedia, the free encyclopedia.html" title="View the content page [ctrl-option-c]" accesskey="c">Article</a></span></li>
+															<li id="ca-talk"><span><a href="http://en.wikipedia.org/wiki/Talk:Java_bytecode_instruction_listings" title="Discussion about the content page [ctrl-option-t]" accesskey="t">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label" tabindex="0"><span>Variants</span><a href="http://en.wikipedia.org/wiki/Java_bytecode_instruction_listings#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/Java bytecode instruction listings - Wikipedia, the free encyclopedia.html">Read</a></span></li>
+															<li id="ca-edit"><span><a href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&action=edit" title="You can edit this page. Please use the preview button before saving [ctrl-option-e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&action=history" title="Past versions of this page [ctrl-option-h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label" tabindex="0"><span>More</span><a href="http://en.wikipedia.org/wiki/Java_bytecode_instruction_listings#" tabindex="-1"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="http://en.wikipedia.org/w/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Search" title="Search Wikipedia [ctrl-option-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton">								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [ctrl-option-z]" accesskey="z">Main page</a></li>
+													<li id="n-contents"><a href="http://en.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+													<li id="n-featuredcontent"><a href="http://en.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+													<li id="n-currentevents"><a href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+													<li id="n-randompage"><a href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random article [ctrl-option-x]" accesskey="x">Random article</a></li>
+													<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&utm_medium=sidebar&utm_campaign=C13_en.wikipedia.org&uselang=en" title="Support us">Donate to Wikipedia</a></li>
+													<li id="n-shoplink"><a href="http://shop.wikimedia.org/" title="Visit the Wikimedia Shop">Wikimedia Shop</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-interaction" aria-labelledby="p-interaction-label">
+			<h3 id="p-interaction-label">Interaction</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+													<li id="n-aboutsite"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+													<li id="n-portal"><a href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+													<li id="n-recentchanges"><a href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [ctrl-option-r]" accesskey="r">Recent changes</a></li>
+													<li id="n-contactpage"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Java_bytecode_instruction_listings" title="List of all English Wikipedia pages containing links to this page [ctrl-option-j]" accesskey="j">What links here</a></li>
+													<li id="t-recentchangeslinked"><a href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Java_bytecode_instruction_listings" title="Recent changes in pages linked from this page [ctrl-option-k]" accesskey="k">Related changes</a></li>
+													<li id="t-upload"><a href="http://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [ctrl-option-u]" accesskey="u">Upload file</a></li>
+													<li id="t-specialpages"><a href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [ctrl-option-q]" accesskey="q">Special pages</a></li>
+													<li id="t-permalink"><a href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&oldid=647868546" title="Permanent link to this revision of the page">Permanent link</a></li>
+													<li id="t-info"><a href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&action=info" title="More information about this page">Page information</a></li>
+													<li id="t-wikibase"><a href="http://www.wikidata.org/wiki/Q6165038" title="Link to connected data repository item [ctrl-option-g]" accesskey="g">Wikidata item</a></li>
+						<li id="t-cite"><a href="http://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Java_bytecode_instruction_listings&id=647868546" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Print/export</h3>
+
+			<div class="body">
+									<ul>
+													<li id="coll-create_a_book"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=book_creator&referer=Java+bytecode+instruction+listings">Create a book</a></li>
+													<li id="coll-download-as-rdf2latex"><a href="http://en.wikipedia.org/w/index.php?title=Special:Book&bookcmd=render_article&arttitle=Java+bytecode+instruction+listings&oldid=647868546&writer=rdf2latex">Download as PDF</a></li>
+													<li id="t-print"><a href="http://en.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&printable=yes" title="Printable version of this page [ctrl-option-p]" accesskey="p">Printable version</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label" style="display: block;"><span class="uls-settings-trigger" tabindex="0" role="button" aria-haspopup="true" original-title="Language settings"></span>
+			<h3 id="p-lang-label">Languages</h3>
+
+			<div class="body">
+									<ul>
+													
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a action="edit" href="http://www.wikidata.org/wiki/Q6165038#sitelinks-wikipedia" text="Edit links" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 19 February 2015, at 12:27.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="http://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/w/index.php?title=Java_bytecode_instruction_listings&mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+															<a href="http://wikimediafoundation.org/"><img src="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/wikimedia-button.png" srcset="//bits.wikimedia.org/images/wikimedia-button-1.5x.png 1.5x, //bits.wikimedia.org/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"></a>
+													</li>
+											<li id="footer-poweredbyico">
+															<a href="http://www.mediawiki.org/"><img src="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="//bits.wikimedia.org/static-1.25wmf17/resources/assets/poweredby_mediawiki_132x47.png 1.5x, //bits.wikimedia.org/static-1.25wmf17/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.wikimediaEvents.statsd","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false\u0026amp;lang=en\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script><script src="./Java bytecode instruction listings - Wikipedia, the free encyclopedia_files/load(2).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":122,"wgHostname":"mw1050"});
+}</script>
+	
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>
