@@ -1,0 +1,105 @@
+#DivIdMenuLanguage{
+    visibility: visible;
+    display: block;
+    width: 45px;
+    position: absolute;
+    left: 5px;
+    float: left;
+    height: 100%;
+
+    -webkit-animation: goRight 1s ease-in-out;
+    -moz-animation: goRight 1s ease-in-out;
+    -ms-animation: goRight 1s ease-in-out;
+    -o-animation: goRight 1s ease-in-out;
+    animation: goRight 1s ease-in-out;
+}
+
+#DivIdMenuLanguageItem{
+    margin-top: 2px;
+    margin-left: 13px;
+}
+
+#DivIdMenuLanguage ul ul{
+    opacity:0;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    height: auto;
+    left:-200px;
+    bottom:0px;
+    
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdMenuLanguage ul li:hover ul{
+    opacity:1;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    left: 12px;
+    
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+@-webkit-keyframes goRight {
+    from {
+        left: -100px;
+        opacity:0;
+    }
+    to {
+        left: 0;
+        opacity:1;
+    }
+}
+
+@-moz-keyframes goRight {
+    from {
+        left: -100px;
+        opacity:0;
+    }
+    to {
+        left: 0;
+        opacity:1;
+    }
+}
+
+@-ms-keyframes goRight {
+    from {
+        left: -100px;
+        opacity:0;
+    }
+    to {
+        left: 0;
+        opacity:1;
+    }
+}
+
+@-o-keyframes goRight {
+    from {
+        left: -100px;
+        opacity:0;
+    }
+    to {
+        left: 0;
+        opacity:1;
+    }
+}
+
+@keyframes goRight {
+    from {
+        left: -100px;
+        opacity:0;
+    }
+    to {
+        left: 0;
+        opacity:1;
+    }
+}

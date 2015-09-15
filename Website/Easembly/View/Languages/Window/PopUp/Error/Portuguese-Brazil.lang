@@ -1,0 +1,5 @@
+error=\0"Error"\0;
+cacheFailedToUpdate=\0"Cache failed to update!"\0;
+yourBrowserDoesNotSupportWebWorkers=\0"Your browser does not support Web Workers!"\0;
+AnErrorOccurredWhileTransferringTheFile=\0"An error occurred while transferring the file!"\0;
+TheTransferHasBeenCanceledByTheUser=\0"The transfer has been canceled by the user!"\0;

@@ -1,17 +1,21 @@
 #DivIdSubMenuInformationHolder{
     position: absolute;
     float: left;
-    left: 33px;
+    padding: 0;
     top: -43px;
+    left: -43px;
     height: 45px;
-    width: 100%;
+    width: 130px;
 }
 
 #DivIdSubMenuInformationHolder2{
     position: absolute;
     float: left;
-    left:43px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     top: -39px;
+    left: -43px;
     height: 45px;
-    width: 100%;
+    width: 130px;
 }

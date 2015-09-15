@@ -1,0 +1,27 @@
+#DivIdSubMenuSearchHolder{
+    position: absolute;
+    float: left;
+    padding: 5px 0 0 0;
+    height: 155px;
+    width: 100%;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdSubMenuSearchHolder2{
+    position: absolute;
+    padding: 15px 0 0 10px;
+    float: left;
+    height: 155px;
+    width: 100%;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}

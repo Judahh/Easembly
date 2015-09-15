@@ -1,0 +1,7 @@
+#DivIdFontBig2{
+    font-size: 200px;
+}
+
+#DivIdText,#DivIdTextBasic, #DivIdTextBasic:hover, #DivIdTextBasic:active, #DivIdTextBasic:focus{
+    font-size: 15px;
+}

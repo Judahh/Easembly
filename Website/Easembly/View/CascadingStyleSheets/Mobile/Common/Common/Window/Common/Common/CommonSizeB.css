@@ -1,0 +1,12 @@
+#DivIdTitleTextSize{
+    font-size: 30px;
+}
+
+#DivIdLocationForm{
+    width: 100%;
+}
+
+#DivIdMapCanvas{
+    width: 100%;
+    /*background-color: red;*/
+}

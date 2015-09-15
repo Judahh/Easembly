@@ -1,0 +1,452 @@
+#DivIdCode{
+    width: 100%;
+}
+
+#DivIdCodeBackground{
+    width: 100%;
+    height: 100%;
+    float: left;
+    z-index: -1;
+    opacity: 0.1;
+    position: absolute;
+    overflow: hidden;
+    text-align: justify;
+    top: 0;
+    left: 0;
+}
+
+#DivIdTextBackground{
+    height: 0px;
+    width: 0px;
+    z-index: -1;
+}
+
+#DivIdDivisor{
+    width: 100%;
+    height: 89px;
+    display: block;
+    border-bottom: solid black;
+}
+
+#DivIdContent{
+    width: 100%;
+    display: block;
+}
+
+#DivIdDivisorA{
+    width: 89px;
+    float: left;
+}
+
+#DivIdDivisorA2{
+    width: 102px;
+    float: left;
+}
+
+#DivIdDivisorA3{
+    width: 115px;
+    float: left;
+}
+
+#DivIdDivisorB{
+    height: 89px;
+    text-align: left;
+    float: left;
+    vertical-align: text-bottom;
+}
+
+#DivIdFullWidthFloat{
+    width: 100%;
+    float: left;
+    position: absolute;
+}
+
+#DivIdFullWidth{
+    width: 100%;
+}
+
+#DivIdTextOverText{
+    color: white;
+}
+
+#DivIdProjectTitle{
+    text-align: center;
+}
+
+#DivIdTitleTextSize{
+    font-size: 50px;
+}
+
+#DivIdProjectTitleText, #DivIdProjectTitleText2{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#DivIdProjectTitleText:active, #DivIdProjectTitleText:focus, #DivIdProjectTitleText2:active, #DivIdProjectTitleText2:focus{
+    font-family: FontFuturisticI;
+}
+
+#DivIdProjectTitleText3{
+    width: 100%;
+    vertical-align: bottom;
+    padding-top: 40px;
+}
+
+#DivIdCodeTitle{
+    text-align: center;
+}
+
+#DivIdCodeTitleText{
+     width: 100%;
+     font-size: 40px;
+}
+
+#DivIdCodeTitleText:active, #DivIdCodeTitleText:focus{
+    font-family: FontFuturisticI;
+}
+
+#DivIdTableCodeWrap{
+    width: 100%;
+}
+
+#ImgIdPicture{
+    box-sizing: border-box;
+    border: solid black 15px;
+    border-radius: 1000px;
+}
+
+#DivIdSquare{
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+#DivId40Height{
+    height: 40px;
+}
+
+#DivId32Height{
+    height: 32px;
+}
+
+#DivFullBlock{
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+
+#DivHalfBlock{
+    width: 50%;
+    float: left;
+}
+
+#DivThirdBlock{
+    width: 33%;
+    float: left;
+}
+
+#DivQuarterBlock{
+    width: 25%;
+    float: left;
+}
+
+#DivTextWhoAmI{
+}
+
+#DivIdTextTalkingAboutMe, #DivIdTextThinkDifferent, #DivIdTextJustified{
+    text-align: justify;
+}
+
+#DivIdTextThinkDifferentTitle {
+    text-align: center;
+}
+
+#DivMyPicture{
+    margin: 15px;
+    width:25%;
+    float: left;
+}
+
+#DivFloatRight{
+    float: right;
+}
+
+#DivFloatLeft{
+    float: left;
+}
+
+input[placeholder], [placeholder], *[placeholder] {
+    color: #f5f5f5 !important;
+}
+
+#InputIdCompany, #InputIdName, #InputIdEmail, #InputIdPhone, #InputIdAddress, #InputIdSalary, #InputIdJobTitle, #InputIdHourIn, #InputIdHourOut{
+    float: left;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+
+
+#TableIdPhone, #TableIdEmail, #TableIdAddress{
+    width: 100%;
+}
+
+#TrIdTableAddress{
+
+}
+
+#TdIdTableAddress{
+
+}
+
+#TrIdTablePhone{
+
+}
+
+#TdIdTablePhone{
+
+}
+
+#SelectIdPhone{
+
+}
+
+#OptionIdPhone{
+
+}
+
+#SelectIdPaymentType{
+    width: 100%;
+    background-color: white;
+    border: white;
+    font-weight: 900;
+
+    font-size: 17px;
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: "OpenSans-Light";
+}
+
+#OptionIdPaymentType{
+
+}
+
+#TrIdTableEmail{
+
+}
+
+#TdIdTableEmail{
+
+}
+
+#TdIdTableCircle{
+    max-width: 25px;
+    min-width: 25px;
+    width: 25px;
+}
+
+#TdIdTableWeek{
+    max-width: 175px;
+    min-width: 175px;
+    width: 175px;
+}
+
+#TdIdTableFlexible{
+    max-width: 95px;
+    min-width: 95px;
+    width: 95px;
+}
+
+#TextAreaIdDescription{
+    background-color: transparent;
+    border: 2px solid black;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+    height: auto;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    -ms-box-sizing: border-box;    /* Firefox, other Gecko */
+    -o-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+#InputIdLocationName, #InputIdComplementaryLocationAddress, #InputIdRestaurantName{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 900;
+
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: "OpenSans-Light";
+
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+}
+
+#TextAreaIdMainLocationAddress, #TextAreaIdHintLocationAddress, #TextAreaIdTraditionalOrder{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 900;
+
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: "OpenSans-Light";
+
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    height: auto;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    -ms-box-sizing: border-box;    /* Firefox, other Gecko */
+    -o-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+#ButtonIdSimple{
+    cursor: pointer;
+}
+
+#ButtonIdSend, #ButtonIdSaveLocation{
+    cursor: pointer;
+    background-color: dodgerblue;
+    width: 100%;
+}
+
+#ButtonIdSendOrder{
+    cursor: pointer;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+#ButtonIdSaveLocation{
+    font-size: 17px;
+    font-weight: 900;
+    color: #ffffff;
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: "OpenSans-Light";
+}
+
+#ButtonIdSendOrder{
+    font-size: 17px;
+    font-weight: 900;
+    color: #000000;
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: "OpenSans-Light";
+}
+
+#DivIdLocationForm{
+    width: 50%;
+    float: left;
+
+    padding: 5px;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    -ms-box-sizing: border-box;    /* Firefox, other Gecko */
+    -o-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+#DivIdRestaurantForm, #DivIdPaymentForm{
+    width: 100%;
+    /*float: left;*/
+
+    padding: 5px;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    -ms-box-sizing: border-box;    /* Firefox, other Gecko */
+    -o-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+div.DivClassComboBoxEditable	{
+    font-family: "OpenSans-Light";
+    font-size: 17px;
+    position: relative;
+    zoom: 1;
+}
+
+div.DivClassComboBoxEditable	div.DivClassDropDownList	{
+    display: none;
+    width: 200px;
+    /*border: solid 1px #000000;*/
+    background-color: #ffffff;
+    height: 200px;
+    overflow: auto;
+    position: absolute;
+    top: 18px;
+    left: 0px;
+}
+
+div.DivClassComboBoxEditable	.DivClassDropDownList	a	{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1px;
+    height: 1em;
+    cursor: default
+}
+
+div.DivClassComboBoxEditable	.DivClassDropDownList	a.light	{
+    color: white;
+    background-color: dodgerblue;
+}
+
+div.DivClassComboBoxEditable	.DivClassDropDownList, input {
+    font-family: "OpenSans-Light";
+    font-size: 17px;
+}
+
+/*div.DivClassComboBoxEditable	input {*/
+    /*float: left;*/
+    /*width: 182px;*/
+    /*border: solid 1px #ccc;*/
+    /*height: 15px*/
+/*}*/
+
+#DivIdMapCanvas{
+    width: 50%;
+    height: 500px;
+    float: left;
+
+    padding: 5px;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    -ms-box-sizing: border-box;    /* Firefox, other Gecko */
+    -o-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}

@@ -3,20 +3,22 @@
     display: block;
     width: 45px;
     position: absolute;
-    left: 0;
+    padding: 3px 0 0 0;
+    right:1px;
+    bottom:0;
     float: left;
     height: 100%;
 
-    -webkit-animation: goRight 1s ease-in-out;
-    -moz-animation: goRight 1s ease-in-out;
-    -ms-animation: goRight 1s ease-in-out;
-    -o-animation: goRight 1s ease-in-out;
-    animation: goRight 1s ease-in-out;
+    -webkit-animation: goLeft 1s ease-in-out;
+    -moz-animation: goLeft 1s ease-in-out;
+    -ms-animation: goLeft 1s ease-in-out;
+    -o-animation: goLeft 1s ease-in-out;
+    animation: goLeft 1s ease-in-out;
 }
 
-#DivIdMenuInformationItem{
-    margin-top: 2px;
-    margin-left: 13px;
+#DivIdMenuInformationWrap{
+    margin-top: 1px;
+    margin-left: 11px;
 }
 
 #DivIdMenuInformation ul ul{
@@ -25,8 +27,8 @@
     display: block;
     position: absolute;
     height: auto;
-    left:-200px;
-    bottom:0px;
+    left: -1px;
+    bottom:-200px;
     
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -40,7 +42,7 @@
     visibility: visible;
     display: block;
     position: absolute;
-    left: 12px;
+    bottom:47px;
     
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -49,57 +51,57 @@
     transition: all 1s;
 }
 
-@-webkit-keyframes goRight {
+@-webkit-keyframes goLeft {
     from {
-        left: -100px;
+        right: -100px;
         opacity:0;
     }
     to {
-        left: 0;
+        right: 0;
         opacity:1;
     }
 }
 
-@-moz-keyframes goRight {
+@-moz-keyframes goLeft {
     from {
-        left: -100px;
+        right: -100px;
         opacity:0;
     }
     to {
-        left: 0;
+        right: 0;
         opacity:1;
     }
 }
 
-@-ms-keyframes goRight {
+@-ms-keyframes goLeft {
     from {
-        left: -100px;
+        right: -100px;
         opacity:0;
     }
     to {
-        left: 0;
+        right: 0;
         opacity:1;
     }
 }
 
-@-o-keyframes goRight {
+@-o-keyframes goLeft {
     from {
-        left: -100px;
+        right: -100px;
         opacity:0;
     }
     to {
-        left: 0;
+        right: 0;
         opacity:1;
     }
 }
 
-@keyframes goRight {
+@keyframes goLeft {
     from {
-        left: -100px;
+        right: -100px;
         opacity:0;
     }
     to {
-        left: 0;
+        right: 0;
         opacity:1;
     }
 }

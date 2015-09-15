@@ -1,0 +1,11 @@
+#DivIdPopUpBox{
+    margin: 0px;
+}
+
+#DivIdPopUpBody{
+    margin: 5px;
+    bottom:45px;
+    top:45px;
+    left:5px;
+    right:5px;
+}

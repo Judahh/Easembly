@@ -1,0 +1,17 @@
+#DivIdSubMenuLanguageHolder{
+    position: absolute;
+    float: left;
+    left: 33px;
+    top: -43px;
+    height: 45px;
+    width: 100%;
+}
+
+#DivIdSubMenuLanguageHolder2{
+    position: absolute;
+    float: left;
+    left:43px;
+    top: -39px;
+    height: 45px;
+    width: 100%;
+}

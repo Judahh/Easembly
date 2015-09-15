@@ -18326,7 +18326,7 @@ function classDirective(name, selector) {
         if (name !== 'ngClass') {
           scope.$watch('$index', function($index, old$index) {
             // jshint bitwise: false
-            var mod = $index & 1;
+            var mod = index & 1;
             if (mod !== (old$index & 1)) {
               var classes = arrayClasses(scope.$eval(attr[name]));
               mod === selector ?
@@ -18377,7 +18377,7 @@ function classDirective(name, selector) {
         }
 
         function ngClassWatchAction(newVal) {
-          if (selector === true || scope.$index % 2 === selector) {
+          if (selector === true || scope.index % 2 === selector) {
             var newClasses = arrayClasses(newVal || []);
             if (!oldVal) {
               addClasses(newClasses);
@@ -20392,7 +20392,7 @@ var ngRepeatDirective = ['$parse', '$animate', function($parse, $animate) {
             // assign key, value, and $index to the locals so that they can be used in hash functions
             if (keyIdentifier) hashFnLocals[keyIdentifier] = key;
             hashFnLocals[valueIdentifier] = value;
-            hashFnLocals.$index = index;
+            hashFnLocals.index = index;
             return trackByExpGetter($scope, hashFnLocals);
           };
         } else {
@@ -20523,7 +20523,7 @@ var ngRepeatDirective = ['$parse', '$animate', function($parse, $animate) {
 
             childScope[valueIdentifier] = value;
             if (keyIdentifier) childScope[keyIdentifier] = key;
-            childScope.$index = index;
+            childScope.index = index;
             childScope.$first = (index === 0);
             childScope.$last = (index === (arrayLength - 1));
             childScope.$middle = !(childScope.$first || childScope.$last);

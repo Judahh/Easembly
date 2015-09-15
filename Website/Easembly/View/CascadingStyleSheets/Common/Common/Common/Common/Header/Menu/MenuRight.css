@@ -1,0 +1,65 @@
+#DivIdMenuRight{
+    visibility: visible;
+    display: block;
+    /*width: 145px;*/
+    position: absolute;
+    right:5px;
+    float: left;
+    height: 100%;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdMenuRight:hover{
+    /*width: 100%px;*/
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdMenuRight:hover #DivIdInput{
+    /*width: 90px;*/
+    opacity:1;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdMenuRight ul ul{
+    opacity:0;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top:-200px;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+#DivIdMenuRight ul li:hover ul{
+    opacity:1;
+    visibility: visible;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top:40px;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}

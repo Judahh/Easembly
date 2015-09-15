@@ -1,0 +1,38 @@
+information=\0"Information"\0;
+about=\0"About"\0;
+aboutText=\0"
+<p style=" text-indent: 2.5em;">We are a delivery service, working out of Hutchinson.</p><br>
+<p style=" text-indent: 2.5em;">We'll pick up food from any restaurant in town, as well as goods or even groceries, and deliver it to your home or work!</p><br>
+<p style=" text-indent: 2.5em;">We'll pick up anything, from a book to a DVD, and we'll make sure to have it for you within the hour!</p><br>
+<p style=" text-indent: 2.5em;">You don't even have to place an order with a restaurant, just place it with us and we'll take care of everything!</p><br>
+<p style=" text-indent: 2.5em;">So sit back, relax, and let us do all the work for you!</p><br>
+"\0;
+howItWorks=\0"How It Works?"\0;
+howItWorksText=\0"
+<p style=" text-indent: 2.5em;">-Simply type in your name, phone number and address, and then specify your order below. Be as specific as you can!</p><br>
+<p style=" text-indent: 2.5em;">-We’ll get it for you, and contact you with information about your order. So make sure you have the right phone number typed in!</p><br>
+<p style=" text-indent: 2.5em;">-We accept cash, American Express, MasterCard, Visa, Discover and PayPal. And you only have to pay once your order's been delivered!</p><br>
+"\0;
+howItWorksText2=\0"
+<p style=" text-indent: 2.5em;">Now delivering to South Hutchinson, and outskirts of town! Different rates apply.</p><br>
+"\0;
+howItWorksText3=\0"
+RATES:<br>
+WHICHEVER IS GREATER APPLIES<br>
+HUTCHINSON AND SOUTH HUTCHINSON: $6.00, OR 10% OF YOUR ORDER AMOUNT<br>
+OUT OF CITY LIMITS: $7.00, OR 10% OF YOUR ORDER AMOUNT<br>
+<br>
+<br>
+WE WILL ONLY GO AS FAR AS 5 MILES OUT OF CITY LIMITS<br>
+TIPS NOT INCLUDED<br>
+BUSINESS HOURS: 7 AM TO 11 PM, MONDAY THRU SATURDAY.<br>
+"\0;
+howItWorksText4=\0"
+WE ARE WAITING FOR YOUR ORDER!<br>
+"\0;
+questions=\0"Questions?"\0;
+questionsText=\0"(620) 314-8969"\0;
+location=\0"Location"\0;
+locationText=\0"Hutchinson, KS"\0;
+followUs=\0"Follow Us"\0;
+close=\0"Close"\0;

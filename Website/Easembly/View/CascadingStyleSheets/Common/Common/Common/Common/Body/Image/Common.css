@@ -5,6 +5,46 @@ img{
     top: 0;
 }
 
+#DivIdFood{
+    position: absolute;
+    float: left;
+    left:0;
+    top:0;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+#ImgIdTemporaryBodyHolder{
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 100%;
+    left:0;
+    top:0;
+    filter: url(blur.svg#blur);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+    -webkit-transform: translate3d(0,0,0);
+    z-index:-1;
+}
+
+#ImgIdFood{
+    position: absolute;
+    float: left;
+    height: 100%;
+    left:0;
+    top:0;
+    filter: url(blur.svg#blur);
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+    /*-webkit-transform: translate3d(0,0,0);
+    z-index:-1;*/
+}
+
+
 #DivIdDealership{
     position: absolute;
     float: left;
@@ -22,28 +62,29 @@ img{
     top:0;
 }
 
-#ImgIdLogo{
+#DivIdLogo{
+    z-index: -1;
     position: absolute;
     float: left;
     left:0;
     top:0;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+    vertical-align: middle;
+    line-height: normal;
+
     opacity: 0;
-    background: white;
+
     -webkit-animation: fadeOut 5s ease-in-out;
     -moz-animation: fadeOut 5s ease-in-out;
     -ms-animation: fadeOut 5s ease-in-out;
     -o-animation: fadeOut 5s ease-in-out;
     animation: fadeOut 5s ease-in-out;
-}
-
-#DivIdLogo{
-    position: absolute;
-    float: left;
-    left:0;
-    top:0;
-    background: white;
-    width: 100%;
-    height: 100%;
 }
 
 @-webkit-keyframes fadeOut {

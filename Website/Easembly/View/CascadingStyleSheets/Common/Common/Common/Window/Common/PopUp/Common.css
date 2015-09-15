@@ -8,7 +8,7 @@
     margin: 45px;
     width:auto;
     height:auto;
-    z-index: -1;
+    z-index: 1;
 }
 
 #DivIdPopUp{
@@ -20,6 +20,7 @@
     top: 0;
     height: 45px;
     width: 100%;
+    position: absolute;
 }
 
 #DivIdPopUpFooter{
@@ -33,11 +34,10 @@
 #DivIdPopUpBody{
     position: absolute;
     margin: 15px;
-    overflow: auto;
     bottom:45px;
-    top:30px;
-    left:30px;
-    right:30px;
+    top:45px;
+    left:45px;
+    right:45px;
     height:auto;
     width: auto;
 }
@@ -45,6 +45,7 @@
 #DivIdPopUpBodyWrap{
     height: 100%;
     width: 100%;
+    overflow: auto;
 }
 
 #DivIdPopUpClose{

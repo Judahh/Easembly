@@ -20,6 +20,51 @@
 }
 
 @font-face {
+    font-family: "FontIconSocialMedia";
+    src: url("../../../../../../Fonts/Socialico.otf");
+    /*src: url("../../../../../../Fonts/Socialico.woff") format('woff');
+    src: url("../../../../../../Fonts/Socialico.ttf")  format(‘truetype’);*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FontIconSocialMedia2";
+    src: url("../../../../../../Fonts/SocialicoPlus.otf");
+    /*src: url("../../../../../../Fonts/SocialicoPlus.woff") format('woff');
+    src: url("../../../../../../Fonts/SocialicoPlus.ttf")  format(‘truetype’);*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FontIconSocialMedia3";
+    src: url("../../../../../../Fonts/MonoSocialIconsFont-1.10.otf");
+    src: url("../../../../../../Fonts/MonoSocialIconsFont-1.10.woff") format('woff');
+    /*src: url("../../../../../../Fonts/SocialicoPlus.ttf")  format(‘truetype’);*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FontIconSocialMedia4";
+    src: url("../../../../../../Fonts/pictonic.ttf");
+    src: url("../../../../../../Fonts/pictonic.woff") format('woff');
+    /*src: url("../../../../../../Fonts/SocialicoPlus.ttf")  format(‘truetype’);*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../../../../../../Fonts/fontawesome-webfont.ttf");
+    src: url("../../../../../../Fonts/fontawesome-webfont.woff") format('woff');
+    /*src: url("../../../../../../Fonts/SocialicoPlus.ttf")  format(‘truetype’);*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "FontFuturisticI";
     src: url("../../../../../../Fonts/FuturisticFontI.otf");
     src: url("../../../../../../Fonts/FuturisticFontI.woff") format('woff');
@@ -42,6 +87,13 @@
     src: url("../../../../../../Fonts/CarDealershipsI.otf");
     src: url("../../../../../../Fonts/CarDealershipsI.woff") format('woff');
     /*src: url("../../../../../../Fonts/CarDealershipsI.ttf")  format(‘truetype’);*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../../../../../../Fonts/OpenSans-Light.ttf")  format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -213,10 +265,10 @@ button, button:active, button:after, button:before {
     text-decoration: none;
 }
 
-#DivIdRedCircle{
-    background: red;
-    height: 15px;
-    width: 15px;
+#DivIdBlueCircle, #DivIdBlackCircle, #DivIdRedCircle{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     opacity: 0.7;
     -webkit-transition: all 0.5s;
@@ -224,15 +276,68 @@ button, button:active, button:after, button:before {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    color: white;
 }
 
-#DivIdRedCircle:hover{
+#DivIdBlackCircle{
+    background: black;
+}
+
+#DivIdBlueCircle{
+    background: dodgerblue;
+}
+
+#DivIdRedCircle{
+    background: red;
+}
+
+#DivIdRedCircle:hover, #DivIdBlueCircle:hover{
     opacity: 1;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+#DivIdCircleText{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#DivIdText2{
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    font-family: "FontFuturisticII";
+    padding: 5px;
+    font-size: 20px;
+}
+
+#DivIdHalf{
+    opacity: 0.5;
+}
+
+#DivIdSomeOpacity{
+    opacity: 0.75;
+}
+
+#DivIdTextBasic, #DivIdTextBasic:hover, #DivIdTextBasic:active, #DivIdTextBasic:focus{
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: "OpenSans-Light";
+    font-weight: 900;
+    padding: 5px;
+    font-size: 20px;
 }
 
 #DivIdText{
@@ -242,7 +347,6 @@ button, button:active, button:after, button:before {
     -ms-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
-    cursor: pointer;
     font-family: "FontFuturisticI";
     padding: 5px;
     font-size: 20px;
@@ -255,6 +359,318 @@ button, button:active, button:after, button:before {
     -ms-animation: fontFuturisticPulse 1.0s linear;
     -o-animation: fontFuturisticPulse 1.0s linear;
     animation: fontFuturisticPulse 1.0s linear;*/
+}
+
+#DivIdFontBig{
+    font-size: 100px;
+}
+
+#DivIdFontBig2{
+    font-size: 500px;
+}
+
+#DivIdHandIconOn, #DivIdHandIcon:hover #DivIdHandIconOff, #DivIdHandIcon #DivIdHandIconOn{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    float: left;
+}
+
+#DivIdHandIconOff, #DivIdHandIcon:hover #DivIdHandIconOn, #DivIdHandIcon #DivIdHandIconOff{
+    visibility: visible;
+    height: 100%;
+    width: auto;
+    float: left;
+}
+
+#DivIdConsoleIcon:hover #DivIdConsoleIconOn{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+
+    -webkit-animation: consoleOn 1s;
+    -moz-animation: consoleOn 1s;
+    -ms-animation: consoleOn 1s;
+    -o-animation: consoleOn 1s;
+    animation: consoleOn 1s;
+
+    -webkit-animation-timing-function: steps(2, end);
+    -moz-animation-timing-function: steps(2, end);
+    -ms-animation-timing-function: steps(2, end);
+    -o-animation-timing-function: steps(2, end);
+    animation-timing-function: steps(2, end);
+
+    -webkit-animation-delay: -0.5s;
+    -moz-animation-delay: -0.5s;
+    -ms-animation-delay: -0.5s;
+    -o-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+
+#DivIdConsoleIcon:hover #DivIdConsoleIconOn1{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+
+    -webkit-animation: consoleOn 1s infinite;
+    -moz-animation: consoleOn 1s infinite;
+    -ms-animation: consoleOn 1s infinite;
+    -o-animation: consoleOn 1s infinite;
+    animation: consoleOn 1s infinite;
+
+    -webkit-animation-timing-function: steps(2, end);
+    -moz-animation-timing-function: steps(2, end);
+    -ms-animation-timing-function: steps(2, end);
+    -o-animation-timing-function: steps(2, end);
+    animation-timing-function: steps(2, end);
+}
+
+#DivIdConsoleIcon:hover #DivIdConsoleIconOn2{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+
+    -webkit-animation: consoleOn 1s infinite;
+    -moz-animation: consoleOn 1s infinite;
+    -ms-animation: consoleOn 1s infinite;
+    -o-animation: consoleOn 1s infinite;
+    animation: consoleOn 1s infinite;
+
+    -webkit-animation-timing-function: steps(2, end);
+    -moz-animation-timing-function: steps(2, end);
+    -ms-animation-timing-function: steps(2, end);
+    -o-animation-timing-function: steps(2, end);
+    animation-timing-function: steps(2, end);
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+
+}
+
+#DivIdConsoleIconOff, #DivIdConsoleIcon #DivIdConsoleIconOff{
+    visibility: visible;
+    height: 100%;
+    width: auto;
+}
+
+#DivIdConsoleIconOn, #DivIdConsoleIconOn1, #DivIdConsoleIconOn2, #DivIdConsoleIcon:hover #DivIdConsoleIconOff{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+#DivIdWebIcon:hover #DivIdWebIconOn1{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+
+    -webkit-animation: webOn 2s infinite;
+    -moz-animation: webOn 2s infinite;
+    -ms-animation: webOn 2s infinite;
+    -o-animation: webOn 2s infinite;
+    animation: webOn 2s infinite;
+
+    -webkit-animation-timing-function: steps(4, start);
+    -moz-animation-timing-function: steps(4, start);
+    -ms-animation-timing-function: steps(4, start);
+    -o-animation-timing-function: steps(4, start);
+    animation-timing-function: steps(4, start);
+
+    -webkit-animation-delay: -1.5s;
+    -moz-animation-delay: -1.5s;
+    -ms-animation-delay: -1.5s;
+    -o-animation-delay: -1.5s;
+    animation-delay: -1.5s;
+}
+
+#DivIdWebIcon:hover #DivIdWebIconOn2{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+
+    -webkit-animation: webOn 2s infinite;
+    -moz-animation: webOn 2s infinite;
+    -ms-animation: webOn 2s infinite;
+    -o-animation: webOn 2s infinite;
+    animation: webOn 2s infinite;
+
+    -webkit-animation-timing-function: steps(4, start);
+    -moz-animation-timing-function: steps(4, start);
+    -ms-animation-timing-function: steps(4, start);
+    -o-animation-timing-function: steps(4, start);
+    animation-timing-function: steps(4, start);
+
+    -webkit-animation-delay: -1s;
+    -moz-animation-delay: -1s;
+    -ms-animation-delay: -1s;
+    -o-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+#DivIdWebIcon:hover #DivIdWebIconOn3{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+
+    -webkit-animation: webOn 2s infinite;
+    -moz-animation: webOn 2s infinite;
+    -ms-animation: webOn 2s infinite;
+    -o-animation: webOn 2s infinite;
+    animation: webOn 2s infinite;
+
+    -webkit-animation-timing-function: steps(4, start);
+    -moz-animation-timing-function: steps(4, start);
+    -ms-animation-timing-function: steps(4, start);
+    -o-animation-timing-function: steps(4, start);
+    animation-timing-function: steps(4, start);
+
+    -webkit-animation-delay: -0.5s;
+    -moz-animation-delay: -0.5s;
+    -ms-animation-delay: -0.5s;
+    -o-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+
+}
+
+#DivIdWebIcon:hover #DivIdWebIconOn4{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+
+    -webkit-animation: webOn 2s infinite;
+    -moz-animation: webOn 2s infinite;
+    -ms-animation: webOn 2s infinite;
+    -o-animation: webOn 2s infinite;
+    animation: webOn 2s infinite;
+
+    -webkit-animation-timing-function: steps(4, start);
+    -moz-animation-timing-function: steps(4, start);
+    -ms-animation-timing-function: steps(4, start);
+    -o-animation-timing-function: steps(4, start);
+    animation-timing-function: steps(4, start);
+
+}
+
+#DivIdWebIconOff, #DivIdWebIcon #DivIdWebIconOff{
+    visibility: visible;
+    height: 100%;
+    width: auto;
+}
+
+#DivIdWebIconOn1, #DivIdWebIconOn2, #DivIdWebIconOn3, #DivIdWebIconOn4, #DivIdWebIcon:hover #DivIdWebIconOff{
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+
+
+#DivIdHeaderSpace{
+    height: 45px;
+    width: 100%;
+}
+
+#DivIdProgressBarHolder{
+    height: 0px;
+    width: 100%;
+}
+
+#DivIdProgressBar{
+    width: 0%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#DivIdIconSocialMedia{
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    font-family: "FontIconSocialMedia";
+    padding: 5px;
+    font-size: 40px;
+}
+
+#DivIdIconSocialMedia2{
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    font-family: "FontIconSocialMedia2";
+    padding: 5px;
+    font-size: 40px;
+}
+
+#DivIdIconSocialMedia3{
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    font-family: "FontIconSocialMedia3";
+    padding: 5px;
+    font-size: 40px;
+}
+
+#DivIdIconSocialMedia4{
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    font-family: "FontIconSocialMedia4";
+    padding: 5px;
+    font-size: 28px;
+}
+
+#DivIdIconAwesome{
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    font-family: "FontAwesome";
+    padding: 5px;
+    font-size: 28px;
+}
+
+#DivIdFont35px{
+    font-size: 35px;
+}
+
+#DivIdDefaultCursor{
+    cursor: default;
+}
+
+#DivIdPointerCursor{
+    cursor: pointer;
+}
+
+#DivIdBasicIcon{
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    cursor: default;
+    font-family: "FontIcon";
+    padding: 5px;
+    font-size: 40px;
 }
 
 #DivIdIcon{
@@ -287,11 +703,11 @@ button, button:active, button:after, button:before {
     position: relative;
     width: 100%;
     height: 100%;
-    /*border: 1px solid;
-    opacity: 0.5;*/
-    border-color: rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid;
+    /*opacity: 0.5;*/
+    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 5px rgba(0, 0, 0, 1);
 }
 
 #DivIdPulse:hover, ul li:hover #DivIdNeon #DivIdMenuItem #DivIdPulse{
@@ -318,10 +734,20 @@ button, button:active, button:after, button:before {
     animation: spin 2.5s linear infinite;
 }
 
-#DivIdNeon{
-    color: white;
-    text-shadow: -1px 0 2px grey, 0 1px 2px grey, 1px 0 2px grey, 0 -1px 2px grey;
-    opacity: 0.9;
+#DivIdSpin2:hover, ul li:hover #DivIdNeon #DivIdMenuItem #DivIdSpin2{
+    -webkit-animation: spin2 2.5s linear infinite;
+    -moz-animation: spin2 2.5s linear infinite;
+    -ms-animation: spin2 2.5s linear infinite;
+    -o-animation: spin2 2.5s linear infinite;
+    animation: spin2 2.5s linear infinite;
+}
+
+a{
+    text-decoration: none;
+}
+
+a, #DivIdNeon{
+    color: black;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -329,9 +755,8 @@ button, button:active, button:after, button:before {
     transition: all 1s;
 }
 
-#DivIdNeon:hover, ul li:hover #DivIdNeon #DivIdMenuItem{
+a:hover, #DivIdNeon:hover, ul li:hover #DivIdNeon #DivIdMenuItem{
     color: deepskyblue;
-    text-shadow: -1px 0 1px lightblue, 0 1px 1px lightblue, 1px 0 1px lightblue, 0 -1px 1px lightblue;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -ms-transition: all 1s;
@@ -458,6 +883,16 @@ ul li ul li {
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
+@-o-keyframes spin2 { 100% { -o-transform: rotate(-360deg); } }
+
+@-ms-keyframes spin2 { 100% { -ms-transform: rotate(-360deg); } }
+
+@-moz-keyframes spin2 { 100% { -moz-transform: rotate(-360deg); } }
+
+@-webkit-keyframes spin2 { 100% { -webkit-transform: rotate(-360deg); } }
+
+@keyframes spin2 { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
 @-o-keyframes shake {
     0% { -o-transform: rotate(0deg); }
     10% { -o-transform: rotate(-10deg); }
@@ -521,6 +956,161 @@ ul li ul li {
     80% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg); }
     90% { -webkit-transform: rotate(10deg); transform: rotate(10deg); }
     100% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+}
+
+@-o-keyframes consoleOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@-ms-keyframes consoleOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@-moz-keyframes consoleOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@-webkit-keyframes consoleOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@keyframes consoleOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@-o-keyframes webOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    75% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@-ms-keyframes webOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    75% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@-moz-keyframes webOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    75% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@-webkit-keyframes webOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    75% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@keyframes webOn {
+    0% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    75% {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        visibility: visible;
+        height: 100%;
+        width: auto;
+    }
 }
 
 /*
@@ -722,4 +1312,206 @@ ul li ul li {
     80% { font-family: "FontFuturisticI"; }
     90% { font-family: "FontFuturisticII"; }
     100% {font-family: "FontFuturisticI"; }
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.squaredOne {
+    top: 0;
+    padding: 0;
+    width: 25px;
+    margin: 0;
+    position: relative;
+}
+
+.squaredOne label {
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    -ms-box-sizing: border-box;    /* Firefox, other Gecko */
+    -o-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.squaredOne label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 6px;
+    left: 6px;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.squaredOne label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.5;
+}
+
+.squaredOne input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    border: 3px solid deepskyblue;
+    border-top: none;
+    border-right: none;
+}
+
+select {
+    font-smooth:always;
+    font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+
+    padding:5px;
+    margin: 0;
+    color:black;
+    border:black solid 1px;
+    border-radius: 0px;
+    background-color: transparent;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+
+select:hover{
+    background-color: deepskyblue;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+/*input{*/
+    /*float: left;*/
+    /*font-size: 20px;*/
+    /*width: 100%;*/
+    /*border-bottom: 2px solid black;*/
+    /*background-color: transparent;*/
+/*}*/
+
+label {position:relative}
+
+label:after {
+    content:'>';
+    font:23px "Consolas", monospace;
+    color:black;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px;
+    /*top:1px;*/
+    position:absolute;
+    pointer-events:none;
+}
+
+label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+.TextAreaClassLined{
+    padding-left: 5px;
+    margin: 0px;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+}
+
+.DivClassLinedWrap {
+    border: 1px solid dodgerblue;
+    /*padding: 3px;*/
+}
+
+.DivClassLinedTextArea textarea, .DivClassLinedWrap .DivClassCodeLines .DivClassLineNumber {
+    font-size: 10pt;
+    font-family: monospace;
+    line-height: normal !important;
+}
+
+.DivClassLinedTextArea textarea {
+    padding-top:0.3em;
+    border: 0;
+}
+
+.DivClassLinedWrap .DivClassLines {
+    margin-top: 0px;
+    width: 50px;
+    float: left;
+    overflow: hidden;
+}
+
+.DivClassLinedWrap .DivClassCodeLines {
+    padding-top: 5px;
+}
+
+.DivClassLinedWrap .DivClassCodeLines .DivClassLineNumber {
+    color: #777777;
+    padding-right: 0.5em;
+    padding-top: 0.0em;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.DivClassLinedWrap .DivClassCodeLines .ClassLineSelect {
+    background-color: dodgerblue;
+}
+
+#DivIdEditorHolder{
+    /*margin-left: -10px;*/
+}
+
+#DivIdButtonSendHolder{
+    width: 100%;
+    height: 45px;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    padding-top: 16px;
 }
