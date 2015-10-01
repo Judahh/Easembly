@@ -8,6 +8,7 @@ window.onload = function(){
     getMenu("DivIdMenuRight","MenuRight","SubMenuRight");
     //getFacebookJavaScriptSDK();
     getLanguageToFacebook();
+    fileTreeController();
     //initializeMapCanvas();
     //$.validator.addMethod("ClassMainLocationAddressValidator", addressValidator);
 

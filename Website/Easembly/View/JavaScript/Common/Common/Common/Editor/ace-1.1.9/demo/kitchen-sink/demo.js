@@ -278,7 +278,8 @@ function onResize() {
         var footerHeight = document.getElementById('DivIdMenuInformation').offsetHeight;
         var titleHeight = document.getElementById('DivIdProjectTitle').offsetHeight;
         var title2Height = document.getElementById('DivIdCodeTitle').offsetHeight;
-        var total = (document.documentElement.clientHeight - (consoleHeight + headerHeight + footerHeight + titleHeight + title2Height - consoleHeight)) + "px";
+        var controlsHeight = document.getElementById('controls').offsetHeight;
+        var total = (document.documentElement.clientHeight - (consoleHeight + headerHeight + footerHeight + titleHeight + title2Height + controlsHeight - consoleHeight)) + "px";
         //alert("total:"+total);
         container.style.width = 100 + "%";//width + "px";
         container.style.height = total;

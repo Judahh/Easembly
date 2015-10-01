@@ -23,6 +23,7 @@
 <!--    <script src="View/JavaScript/Common/Common/Common/GoogleGeolocation.js"></script>-->
     <script src="View/JavaScript/Common/Common/Common/Facebook.js"></script>
     <script src="View/JavaScript/Common/Common/Common/PDFMaker.js"></script>
+    <script src="View/JavaScript/Common/Common/Common/FileTree.js"></script>
     <script src="View/JavaScript/Common/Common/Common/OnWindowLoad.js"></script>
     <script src="View/JavaScript/Common/Common/Common/TextAreaLined.js"></script>
 </html>

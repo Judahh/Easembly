@@ -35,37 +35,37 @@
 <!--        </div>-->
 <!--    </li>-->
 
-    <li>
-        <div id="DivIdNeon">
-            <div id="DivIdMenuItem">
-                <div id="DivIdIcon" style="color: #000000">
-                    <div id="DivIdSpin">X</div>
-                </div>
-            </div>
-        </div>
+<!--    <li>-->
+<!--        <div id="DivIdNeon">-->
+<!--            <div id="DivIdMenuItem">-->
+<!--                <div id="DivIdIcon" style="color: #000000">-->
+<!--                    <div id="DivIdSpin">X</div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div id="DivIdSubMenuSettings">
-            <ul>
-                <div id="DivIdSubMenuSettingsHolder" style="display: none">
-                    <div id="DivIdGlass"></div>
-                </div>
-                <div id="DivIdSubMenuSettingsHolder2" style="display: none">
-                    <li>
-                        <div id="DivIdPointerCursor" onclick="openPopUp('EditorSettings')">
-                            <div id="DivIdNeon">
-                                <div id="DivIdTextBasic">
-                                    <?php
-                                    $multilingualText = MultilingualText::MultilingualText();
-                                    echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "editor");
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </div>
-            </ul>
-        </div>
-    </li>
+<!--        <div id="DivIdSubMenuSettings">-->
+<!--            <ul>-->
+<!--                <div id="DivIdSubMenuSettingsHolder" style="display: none">-->
+<!--                    <div id="DivIdGlass"></div>-->
+<!--                </div>-->
+<!--                <div id="DivIdSubMenuSettingsHolder2" style="display: none">-->
+<!--                    <li>-->
+<!--                        <div id="DivIdPointerCursor" onclick="openPopUp('EditorSettings')">-->
+<!--                            <div id="DivIdNeon">-->
+<!--                                <div id="DivIdTextBasic">-->
+<!--                                    --><?php
+//                                    $multilingualText = MultilingualText::MultilingualText();
+//                                    echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "editor");
+//                                    ?>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                </div>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </li>-->
 
     <li>
         <div id="DivIdNeon">
@@ -93,42 +93,42 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div id="DivIdPointerCursor" onclick="goToPage('Goods')">
-                            <div id="DivIdNeon">
-                                <div id="DivIdTextBasic">
-                                    <?php
-                                        $multilingualText = MultilingualText::MultilingualText();
-                                        echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "goods");
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="DivIdPointerCursor" onclick="goToPage('OtherStuff')">
-                            <div id="DivIdNeon">
-                                <div id="DivIdTextBasic">
-                                    <?php
-                                        $multilingualText = MultilingualText::MultilingualText();
-                                        echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "other");
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="DivIdPointerCursor">
-                            <div id="DivIdNeon">
-                                <div id="DivIdTextBasic" onclick="goToPage('Work')">
-                                    <?php
-                                        $multilingualText = MultilingualText::MultilingualText();
-                                        echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "work");
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+<!--                    <li>-->
+<!--                        <div id="DivIdPointerCursor" onclick="goToPage('Goods')">-->
+<!--                            <div id="DivIdNeon">-->
+<!--                                <div id="DivIdTextBasic">-->
+<!--                                    --><?php
+//                                        $multilingualText = MultilingualText::MultilingualText();
+//                                        echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "goods");
+//                                    ?>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <div id="DivIdPointerCursor" onclick="goToPage('OtherStuff')">-->
+<!--                            <div id="DivIdNeon">-->
+<!--                                <div id="DivIdTextBasic">-->
+<!--                                    --><?php
+//                                        $multilingualText = MultilingualText::MultilingualText();
+//                                        echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "other");
+//                                    ?>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <div id="DivIdPointerCursor">-->
+<!--                            <div id="DivIdNeon">-->
+<!--                                <div id="DivIdTextBasic" onclick="goToPage('Work')">-->
+<!--                                    --><?php
+//                                        $multilingualText = MultilingualText::MultilingualText();
+//                                        echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "work");
+//                                    ?>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
                 </div>
             </ul>
         </div>
@@ -146,18 +146,18 @@
                     <div id="DivIdGlass"></div>
                 </div>
                 <div id="DivIdSubMenuUserHolder2">
-                    <li>
-                        <div id="DivIdPointerCursor" onclick="homeSmoothScroll('DivIdMyOrders')">
-                            <div id="DivIdNeon">
-                                <div id="DivIdTextBasic">
-                                    <?php
-                                        $multilingualText = MultilingualText::MultilingualText();
-                                        echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "projects");
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+<!--                    <li>-->
+<!--                        <div id="DivIdPointerCursor" onclick="homeSmoothScroll('DivIdMyOrders')">-->
+<!--                            <div id="DivIdNeon">-->
+<!--                                <div id="DivIdTextBasic">-->
+<!--                                    --><?php
+//                                        $multilingualText = MultilingualText::MultilingualText();
+//                                        echo $multilingualText->getMultilingualTextFromWindowFromCommon($language, "MenuRight", "projects");
+//                                    ?>
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </li>-->
                     <li>
                         <div id="DivIdPointerCursor" onclick="goToPage('CodeEditor')">
                             <div id="DivIdNeon">

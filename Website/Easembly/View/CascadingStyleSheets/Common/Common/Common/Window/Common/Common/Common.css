@@ -328,7 +328,7 @@ input[placeholder], [placeholder], *[placeholder] {
     cursor: pointer;
 }
 
-#ButtonIdSend, #ButtonIdSaveLocation{
+#ButtonIdSend, #ButtonIdSaveLocation, #ButtonIdBasic{
     cursor: pointer;
     background-color: dodgerblue;
     width: 100%;

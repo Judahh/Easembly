@@ -1,7 +1,7 @@
 <!--<img  id="ImgIdTemporaryBodyHolder" src="View/Images/Pictures/Background.jpeg"/>-->
 
 <div class="DivClassBodyHolder">
-    <div id="DivIdFood">
+    <div id="DivIdBody">
 <!--        <img  id="ImgIdFood" src="View/Images/Pictures/Background.jpeg"/>-->
     </div>
 </div>

@@ -345,8 +345,8 @@ function codeEditorCheck(file) {
         //    alert("CARREGOU!");
         //    codeEditorLoad();
         }
-        document.getElementById("DivIdSubMenuSettingsHolder").style.display="block";
-        document.getElementById("DivIdSubMenuSettingsHolder2").style.display="block";
+        //document.getElementById("DivIdSubMenuSettingsHolder").style.display="block";
+        //document.getElementById("DivIdSubMenuSettingsHolder2").style.display="block";
     }
 
     if(file.includes('EditorSettings')) {
