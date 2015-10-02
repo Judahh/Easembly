@@ -73,4 +73,3 @@ function php4ScanDirectory($dir) {
     sort($files);
     return($files);
 }
-?>
