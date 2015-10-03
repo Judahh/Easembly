@@ -453,7 +453,7 @@ function transferComplete(evt) {
 }
 
 function transferFailed(evt) {
-    alert(getMultilingualTextFromWindowFromPopUp("English-USA", "Error", "AnErrorOccurredWhileTransferringTheFile"));
+    //alert(getMultilingualTextFromWindowFromPopUp("English-USA", "Error", "AnErrorOccurredWhileTransferringTheFile"));
 }
 
 function transferCanceled(evt) {
