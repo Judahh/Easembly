@@ -35,7 +35,7 @@
         </div>
 
         <?php
-            echo phpFileTree("../../../../../../../", "javascript:alert('You clicked on [link]');");
+            echo phpFileTree("../../../../../../../User/", "javascript:alert('You clicked on [link]');");
         ?>
 
         <div id="DivIdPopUpFooter">

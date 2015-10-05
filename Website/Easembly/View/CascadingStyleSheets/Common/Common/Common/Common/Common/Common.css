@@ -1519,3 +1519,96 @@ label:before {
 #DivIdBasicButtonHolder{
     /*height: 45px;*/
 }
+
+.DivClassPHPFileTree {
+    /*font-family: Georgia;*/
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.DivClassPHPFileTree A {
+    color: #000000;
+    text-decoration: none;
+}
+
+.DivClassPHPFileTree A:hover {
+    color: #666666;
+}
+
+.DivClassPHPFileTree .open {
+    font-style: italic;
+}
+
+.DivClassPHPFileTree .closed {
+    font-style: normal;
+}
+
+.DivClassPHPFileTree .LiClassPHPFileTreeDirectory {
+    list-style-image: url(../../../../../../Images/PHPFileTree/directory.png);
+}
+
+/* Default file */
+.DivClassPHPFileTree LI.LiClassPHPFileTreeFile { list-style-image: url(../../../../../../Images/PHPFileTree/file.png); }
+/* Additional file types */
+.DivClassPHPFileTree LI.ext-3gp { list-style-image: url(../../../../../../Images/PHPFileTree/film.png); }
+.DivClassPHPFileTree LI.ext-afp { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-afpa { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-asp { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-aspx { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-avi { list-style-image: url(../../../../../../Images/PHPFileTree/film.png); }
+.DivClassPHPFileTree LI.ext-bat { list-style-image: url(../../../../../../Images/PHPFileTree/application.png); }
+.DivClassPHPFileTree LI.ext-bmp { list-style-image: url(../../../../../../Images/PHPFileTree/picture.png); }
+.DivClassPHPFileTree LI.ext-c { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-cfm { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-cgi { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-com { list-style-image: url(../../../../../../Images/PHPFileTree/application.png); }
+.DivClassPHPFileTree LI.ext-cpp { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-css { list-style-image: url(../../../../../../Images/PHPFileTree/css.png); }
+.DivClassPHPFileTree LI.ext-doc { list-style-image: url(../../../../../../Images/PHPFileTree/doc.png); }
+.DivClassPHPFileTree LI.ext-exe { list-style-image: url(../../../../../../Images/PHPFileTree/application.png); }
+.DivClassPHPFileTree LI.ext-gif { list-style-image: url(../../../../../../Images/PHPFileTree/picture.png); }
+.DivClassPHPFileTree LI.ext-fla { list-style-image: url(../../../../../../Images/PHPFileTree/flash.png); }
+.DivClassPHPFileTree LI.ext-h { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-htm { list-style-image: url(../../../../../../Images/PHPFileTree/html.png); }
+.DivClassPHPFileTree LI.ext-html { list-style-image: url(../../../../../../Images/PHPFileTree/html.png); }
+.DivClassPHPFileTree LI.ext-jar { list-style-image: url(../../../../../../Images/PHPFileTree/java.png); }
+.DivClassPHPFileTree LI.ext-jpg { list-style-image: url(../../../../../../Images/PHPFileTree/picture.png); }
+.DivClassPHPFileTree LI.ext-jpeg { list-style-image: url(../../../../../../Images/PHPFileTree/picture.png); }
+.DivClassPHPFileTree LI.ext-js { list-style-image: url(../../../../../../Images/PHPFileTree/script.png); }
+.DivClassPHPFileTree LI.ext-lasso { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-log { list-style-image: url(../../../../../../Images/PHPFileTree/txt.png); }
+.DivClassPHPFileTree LI.ext-m4p { list-style-image: url(../../../../../../Images/PHPFileTree/music.png); }
+.DivClassPHPFileTree LI.ext-mov { list-style-image: url(../../../../../../Images/PHPFileTree/film.png); }
+.DivClassPHPFileTree LI.ext-mp3 { list-style-image: url(../../../../../../Images/PHPFileTree/music.png); }
+.DivClassPHPFileTree LI.ext-mp4 { list-style-image: url(../../../../../../Images/PHPFileTree/film.png); }
+.DivClassPHPFileTree LI.ext-mpg { list-style-image: url(../../../../../../Images/PHPFileTree/film.png); }
+.DivClassPHPFileTree LI.ext-mpeg { list-style-image: url(../../../../../../Images/PHPFileTree/film.png); }
+.DivClassPHPFileTree LI.ext-ogg { list-style-image: url(../../../../../../Images/PHPFileTree/music.png); }
+.DivClassPHPFileTree LI.ext-pcx { list-style-image: url(../../../../../../Images/PHPFileTree/picture.png); }
+.DivClassPHPFileTree LI.ext-pdf { list-style-image: url(../../../../../../Images/PHPFileTree/pdf.png); }
+.DivClassPHPFileTree LI.ext-php { list-style-image: url(../../../../../../Images/PHPFileTree/php.png); }
+.DivClassPHPFileTree LI.ext-png { list-style-image: url(../../../../../../Images/PHPFileTree/picture.png); }
+.DivClassPHPFileTree LI.ext-ppt { list-style-image: url(../../../../../../Images/PHPFileTree/ppt.png); }
+.DivClassPHPFileTree LI.ext-psd { list-style-image: url(../../../../../../Images/PHPFileTree/psd.png); }
+.DivClassPHPFileTree LI.ext-pl { list-style-image: url(../../../../../../Images/PHPFileTree/script.png); }
+.DivClassPHPFileTree LI.ext-py { list-style-image: url(../../../../../../Images/PHPFileTree/script.png); }
+.DivClassPHPFileTree LI.ext-rb { list-style-image: url(../../../../../../Images/PHPFileTree/ruby.png); }
+.DivClassPHPFileTree LI.ext-rbx { list-style-image: url(../../../../../../Images/PHPFileTree/ruby.png); }
+.DivClassPHPFileTree LI.ext-rhtml { list-style-image: url(../../../../../../Images/PHPFileTree/ruby.png); }
+.DivClassPHPFileTree LI.ext-rpm { list-style-image: url(../../../../../../Images/PHPFileTree/linux.png); }
+.DivClassPHPFileTree LI.ext-ruby { list-style-image: url(../../../../../../Images/PHPFileTree/ruby.png); }
+.DivClassPHPFileTree LI.ext-sql { list-style-image: url(../../../../../../Images/PHPFileTree/db.png); }
+.DivClassPHPFileTree LI.ext-swf { list-style-image: url(../../../../../../Images/PHPFileTree/flash.png); }
+.DivClassPHPFileTree LI.ext-tif { list-style-image: url(../../../../../../Images/PHPFileTree/picture.png); }
+.DivClassPHPFileTree LI.ext-tiff { list-style-image: url(../../../../../../Images/PHPFileTree/picture.png); }
+.DivClassPHPFileTree LI.ext-txt { list-style-image: url(../../../../../../Images/PHPFileTree/txt.png); }
+.DivClassPHPFileTree LI.ext-vb { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-wav { list-style-image: url(../../../../../../Images/PHPFileTree/music.png); }
+.DivClassPHPFileTree LI.ext-wmv { list-style-image: url(../../../../../../Images/PHPFileTree/film.png); }
+.DivClassPHPFileTree LI.ext-xls { list-style-image: url(../../../../../../Images/PHPFileTree/xls.png); }
+.DivClassPHPFileTree LI.ext-xml { list-style-image: url(../../../../../../Images/PHPFileTree/code.png); }
+.DivClassPHPFileTree LI.ext-zip { list-style-image: url(../../../../../../Images/PHPFileTree/zip.png); }
+/* You can add millions of these... */
+
+
