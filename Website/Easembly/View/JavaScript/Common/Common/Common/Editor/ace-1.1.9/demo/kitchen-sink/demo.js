@@ -274,7 +274,7 @@ function onResize() {
         var left = env.split.$container.offsetLeft;
         //var width = document.documentElement.clientWidth - left;
         //var buttonHeight = document.getElementById('ButtonIdSend').offsetHeight;
-        var headerHeight = document.getElementById('DivIdMenuLeft').offsetHeight;
+        var headerHeight = document.getElementById('DivIdMenuRight').offsetHeight;
         var footerHeight = document.getElementById('DivIdMenuInformation').offsetHeight;
         var titleHeight = document.getElementById('DivIdProjectTitle').offsetHeight;
         var title2Height = document.getElementById('DivIdCodeTitle').offsetHeight;
