@@ -1,5 +1,0 @@
-*.js diff= jsBinary
-*.map diff= mapBinary
-*.css diff= cssBinary
-*.json diff= jsonBinary
-*.txt diff= txtBinary

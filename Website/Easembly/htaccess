@@ -1,0 +1,57 @@
+#DirectoryIndex index.php index.html
+
+#Options +FollowSymLinks
+#Options -Indexes
+
+#<IfModule mod_rewrite.c>
+#	RewriteEngine On
+#	#RewriteBase /relative/web/path/
+
+#	RewriteCond %{REQUEST_FILENAME} -f [OR]
+#	RewriteCond %{REQUEST_FILENAME} -d
+#	RewriteRule ^(.+) - [PT,L]
+
+#	RewriteCond %{REQUEST_URI} !=/favicon.ico
+#	RewriteRule ^(.*) index.php
+
+#	RewriteCond %{HTTP:Authorization}  !^$
+#	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+#</IfModule>
+
+#php_value register_globals 0
+
+#Options All -Indexes
+
+#<files wp-config.php>
+#	order allow,deny
+#	deny from all
+#</files>
+
+#RewriteEngine On
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http://(www\.)?yourdomain.com/.*$ [NC]
+#RewriteRule \.(gif|jpg)$ http://www.yoursite.com/hotlink.gif [R,L]
+
+#order deny,allow
+#allow from 192.168.5.1
+#deny from all
+
+#<Files .htaccess>
+#	order allow,deny
+#	deny from all
+#</Files>
+
+#<Files robots.txt>
+#	order allow,deny
+#	deny from all
+#</Files>
+
+# Block IPs from accessing all but robots.txt and custom 403 page
+#SetEnvIf Request_URI "(index.html¦403\.html¦robots\.txt)$" alw
+#<Files *>
+#	order deny,allow
+#	deny from 192.168.0.1
+#	deny from 127.0.0.3
+#	deny from all
+#	allow from env=alw
+#</Files>

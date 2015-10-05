@@ -20,7 +20,7 @@
     <script src="View/JavaScript/Common/Common/Common/Body/Video/Common.js"></script>
     <script src="View/JavaScript/Common/Common/Common/Body/PopUp/Common.js"></script>
     <script src="View/JavaScript/Common/Common/Common/ComboBoxEditable.js"></script>
-<!--    <script src="View/JavaScript/Common/Common/Common/GoogleGeolocation.js"></script>-->
+    <script src="View/JavaScript/Common/Common/Common/GoogleGeolocation.js"></script>
     <script src="View/JavaScript/Common/Common/Common/Facebook.js"></script>
     <script src="View/JavaScript/Common/Common/Common/PDFMaker.js"></script>
     <script src="View/JavaScript/Common/Common/Common/FileTree.js"></script>
